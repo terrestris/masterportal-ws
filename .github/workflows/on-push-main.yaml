@@ -31,9 +31,6 @@ jobs:
     - name: Install dependencies ⏬
       run: npm i
 
-    - name: Build artifacts 🏗️
-      run: npm run archive
-
     - name: Get masterportal-ws version 🔖
       run: |
         echo "VERSION=$(node -pe "require('./package.json').version")" >> $GITHUB_ENV
