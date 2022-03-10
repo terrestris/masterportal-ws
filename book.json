@@ -1,0 +1,44 @@
+{
+    "title": "Mastering the Masterportal",
+    "description": "GeoServer introduction workshop materials",
+    "language": "de",
+    "root": "./src",
+    "variables": {
+      "workshopName": "Mastering the Masterportal introduction",
+      "osGeoLiveVersion": "14",
+      "authors": [{
+        "name": "Hannes Blitza",
+        "mail": "blitza@terrestris.de"
+      }]
+    },
+    "plugins": [
+      "advanced-emoji",
+      "image-captions",
+      "pagefooter",
+      "richquotes@0.0.9",
+      "codeblock-label",
+      "sectionx-ex",
+      "logo"
+    ],
+    "pluginsConfig": {
+      "logo": {
+        "rootStyle": "text-align: center; padding: 10px;",
+        "logo": "https://www.masterportal.org/files/cto_layout/themedesigner/uploads/LGV_Masterportal_logo_quer_rgb_RZ.png",
+        "url": "https://www.masterportal.org",
+        "logoStyle": "width: 150px;"
+      },
+      "image-captions": {
+        "caption": "_CAPTION_"
+      },
+      "page-footer": {
+        "footer":"FOSSGIS 2022",
+        "label": "Last modified: ",
+        "format": "YYYY-MM-DD HH:mm:ss",
+        "utc" : true
+      },
+      "sectionx": {
+        "tag": "b"
+      }
+    }
+  }
+  

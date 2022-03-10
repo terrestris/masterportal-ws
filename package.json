@@ -1,0 +1,27 @@
+{
+  "name": "mastering-the-masterportal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "honkit build",
+    "serve": "honkit serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gitbook-plugin-codeblock-label": "^1.0.1",
+    "gitbook-plugin-image-captions": "^3.1.0",
+    "gitbook-plugin-richquotes": "0.0.9",
+    "gitbook-plugin-sectionx-ex": "^3.1.1",
+    "honkit": "^3.7.1",
+    "honkit-plugin-pagefooter": "^0.1.1"
+  },
+  "dependencies": {
+    "gitbook-plugin-advanced-emoji": "^0.2.2",
+    "gitbook-plugin-insert-logo-link-fixed": "^1.0.0",
+    "gitbook-plugin-logo": "0.0.2"
+  }
+}
