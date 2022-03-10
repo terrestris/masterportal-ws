@@ -1,51 +1,17 @@
-name: Update gh-pages
+name: Flow-CI-Honkit
 
 on:
   push:
     branches:
-      - main
+        - main # pls change trigger on each repos
+env:
+  USER_EMAIL: ${{secrets.USER_EMAIL}}
+  USER_NAME: ${{secrets.USER_NAME}}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
-  build:
-    runs-on: ubuntu-18.04
+  Build-Deploy:
+    runs-on: ubuntu-latest
     steps:
-    - name: Checkout sources 🔰
-      uses: actions/checkout@v2
-
-    - name: Setup Node.js 16 🧮
-      uses: actions/setup-node@v1
-      with:
-        node-version: 16
-
-    - name: Cache Node.js modules 💾
-      uses: actions/cache@v2
-      with:
-        path: ~/.npm
-        key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.OS }}-node-
-          ${{ runner.OS }}-
-    - name: Install Calibre 🧰
-      run: sudo apt-get update && sudo apt install calibre
-
-    - name: Install dependencies ⏬
-      run: npm i
-
-    - name: Get masterportal-ws version 🔖
-      run: |
-        echo "VERSION=$(node -pe "require('./package.json').version")" >> $GITHUB_ENV
-    - name: Deploy (to docs/v${{ env.VERSION }}) 🚀
-      uses: JamesIves/github-pages-deploy-action@v4.2.5
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        branch: gh-pages
-        folder: _book
-        target-folder: v${{ env.VERSION }}
-
-    - name: Deploy (to docs/v${{ env.VERSION }}) 🚀
-      uses: JamesIves/github-pages-deploy-action@v4.2.5
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        branch: gh-pages
-        folder: _book
-        target-folder: latest
+      - name: Build and deploy
+        uses: monstar-lab-oss/honkit-ghpages-action@main
