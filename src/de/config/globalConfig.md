@@ -71,7 +71,7 @@ Ein Beispiel, das nur wenige Konfigurationsparameter bedarf ist ein `WMTS`, wenn
 
 Hier muss bedacht werden, dass die Kacheln in der Projektion des ersten TileGrid angefragt werden, dass im Capabilities auftaucht (zumeist EPSG:3857). OpenLayers übernimmt im Client die [Reprojektion der Kacheln](https://openlayers.org/en/latest/examples/reprojection.html) in die aktuelle Kartenprojektion.
 
-[Link zur vollständigen Dokumentation](https://bitbucket.org/geowerkstatt-hamburg/masterportal/src/6801563147d77d25faa5b798e320d15e4489a807/doc/services.json.md)
+[Link zur vollständigen Dokumentation](https://bitbucket.org/geowerkstatt-hamburg/masterportal/src/v2.17.1/doc/services.json.md)
 
 
 ## rest-services.json
