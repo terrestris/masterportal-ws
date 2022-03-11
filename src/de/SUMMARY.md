@@ -8,6 +8,7 @@
     * [Globale Konfiguration](config/globalConfig.md)
     * [Portalkonfiguration](config/portalConfig.md)
 * [Masterportal Admin](mpadmin/README.md)
+* [Übungsaufgaben](exercises/README.md)
 * [Erweiterte Konfiguration](customConfig/README.md)
 * [Addons](addons/README.md)
     * [Store](addons/store.md)
