@@ -3,7 +3,7 @@
 <html lang="de">
     <head>
         <meta charset="UTF-8">
-        <title>Entwicklungssetup &#xB7; Mastering the Masterportal</title>
+        <title>&#xDC;bungsaufgaben &#xB7; Mastering the Masterportal</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content>
         <meta name="generator" content="HonKit 3.7.1">
@@ -84,10 +84,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../config/">
+    <link rel="next" href="../customConfig/">
     
     
-    <link rel="prev" href="../basics/npm.html">
+    <link rel="prev" href="../mpadmin/">
     
 
     </head>
@@ -174,9 +174,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="./">
+        <li class="chapter " data-level="1.4" data-path="../devsetup/">
             
-                <a href="./">
+                <a href="../devsetup/">
             
                     
                     Entwicklungssetup
@@ -245,9 +245,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="../exercises/">
+        <li class="chapter active" data-level="1.7" data-path="./">
             
-                <a href="../exercises/">
+                <a href="./">
             
                     
                     &#xDC;bungsaufgaben
@@ -359,7 +359,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="..">Entwicklungssetup</a>
+        <a href="..">&#xDC;bungsaufgaben</a>
     </h1>
 </div>
 
@@ -374,37 +374,73 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="repository-und-entwicklungssetup">Repository und Entwicklungssetup</h2>
-<ol>
-<li>&#xD6;ffnen Sie das Terminal und f&#xFC;hren Sie den Befehl <code>pwd</code> aus.</li>
-<li>Sie sollten sich im Pfad <code>/home/user</code> befinden.</li>
-<li>F&#xFC;hren Sie den Befehl <code>git clone https://hblitza@bitbucket.org/geowerkstatt-hamburg/masterportal.git</code> aus, um das Masterportal Repository auf Ihre Festplatte zu kopieren. Navigieren Sie anschlie&#xDF;end in das neue Verzeichnis per Befehl: <code>cd masterportal</code>.</li>
-</ol>
-<p>Wie in vielen modernen Javascript Projekte, wird auch f&#xFC;r das Masterportal ein <a href="https://github.com/nodejs/node" target="_blank">Node.js</a> Framework zur Entwicklung genutzt. Mithilfe des Paketsmanager <a href="https://www.npmjs.com/" target="_blank">npm</a> werden s&#xE4;mtliche Bibliotheken und Abh&#xE4;ngigkeiten gemanaged und installiert, wie beispielsweise <a href="https://github.com/webpack/webpack" target="_blank">webpack</a>, der als <em>module bundler</em> fungiert.</p>
-<p>Eine ausf&#xFC;hrliche Beschreibung dieser Entwicklungstools- und Frameworks w&#xFC;rde den Rahmen dieses Workshops sprengen, die ben&#xF6;tigsten Infos werden im Rahmen dieses Workshops gegeben. Eine kurzen &#xDC;berblick &#xFC;ber npm ist <a href="../basics/npm.html">hier</a> zu finden.</p>
-<ol>
-<li>F&#xFC;hren Sie <code>node -v</code>, um die installierte Version von <code>node</code> auszugeben.</li>
-<li>Es wird <code>node</code> in der Version 16.13.2 f&#xFC;r diesen Workshop ben&#xF6;tigt.</li>
-<li>Falls Sie eine &#xE4;ltere Version installiert haben, f&#xFC;hren Sie folgende Schritte aus:<ol>
-<li><code>wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash</code></li>
-<li>Dies installiert den <code>node version manager</code>.</li>
-<li><code>nvm install 16.3.2</code></li>
-<li><code>nvm use v16.13.2</code></li>
-<li>Pr&#xFC;fen Sie nun erneut per <code>node -v</code> die <code>node</code> version.</li>
-</ol>
-</li>
-<li>Es soll auf der Version <code>2.17.1</code> gearbeitet werden, hierzu sind folgend Befehle auszuf&#xFC;hren:<ul>
-<li><code>git fetch origin</code></li>
-<li><code>git checkout v2.17.1</code></li>
+                                <h1 id="&#xFC;bungsaufgaben">&#xDC;bungsaufgaben</h1>
+<blockquote>
+<p><img align="absmiddle" alt=":exclamation:" class="emoji" src="../../gitbook/gitbook-plugin-advanced-emoji/emojis/exclamation.png" title=":exclamation:"><br>Startpunkt ist der <code>basic</code> Branch in der Entwicklungsumgebung:
+Im Masterportal Folder (cloned Bitbucket-Repository) muss vorher ein <code>npm i</code> ausgef&#xFC;hrt wurden sein.
+Dann wird das Entwicklungssetup gestartet mit <code>npm run start</code>.
+Das Starten dauert einige Zeit, es werden einige Warnings angezeigt, die aber getrost ignoriert werden k&#xF6;nnen.</p>
+</blockquote>
+<p><strong>Aufg. 1</strong> Konfigurieren Sie das Messen-Tool so, dass f&#xFC;r das Messen der Fl&#xE4;che stets auch Dezimeter angezeigt werden.</p>
+<sec data-title="Hint" data-id="section0" data-show="true" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Hint<a class="pull-right section atTitle btn btn-default" target="section0"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="section0"><div class="panel-body">
+<p>Schauen Sie in der <code>config.json.md</code> nach <code>Portalconfig.menu.tool.measure</code></p>
+</div></div></div></sec>
+<p><strong>Aufg. 2</strong> Definieren Sie einen neuen WMS-Layer in der <code>services.json</code> und integrieren Sie diese der Anwendung.</p>
+<ul>
+<li>Basis-Url: <code>https://ows.terrestris.de/osm/service</code></li>
+<li>Er soll initial Sichtbar sein</li>
+<li>Kachelgr&#xF6;&#xDF;e 512x512 Pixel</li>
+<li>Kein <code>GetFeatureInfo</code></li>
 </ul>
-</li>
-<li>Installieren Sie alle ben&#xF6;tigten Abh&#xE4;ngigkeiten des Masterportals-Projekts: <code>npm i</code>.</li>
-<li>Starten Sie anschlie&#xDF;end den Entwicklungsserver: <code>npm run start</code>.</li>
-<li>Nun wird der Masterportal-Quellcode kompiliert und <code>webpack</code> erstellt den <em>dev build</em>, der anschlie&#xDF;end im Browser unter der Adresse <code>localhost:9001/portal/basic</code> aufgerufen werden kann.<footer class="page-footer">FOSSGIS 2022<span class="footer-modification">Last modified: 
+<sec data-title="Hint" data-id="section1" data-show="true" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Hint<a class="pull-right section atTitle btn btn-default" target="section1"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="section1"><div class="panel-body">
+<pre><code>{
+    &quot;id&quot;: &quot;1000&quot;,
+    &quot;name&quot;: &quot;OSM WMS&quot;,
+    &quot;url&quot;: &quot;https://ows.terrestris.de/osm/service&quot;,
+    &quot;typ&quot;: &quot;WMS&quot;,
+    &quot;layers&quot;: &quot;OSM-WMS&quot;,
+    &quot;format&quot;: &quot;image/png&quot;,
+    &quot;version&quot;: &quot;1.3.0&quot;,
+    &quot;singleTile&quot;: false,
+    &quot;transparent&quot;: false,
+    &quot;tilesize&quot;: &quot;512&quot;,
+    &quot;minScale&quot;: &quot;0&quot;,
+    &quot;maxScale&quot;: &quot;1000000&quot;,
+    &quot;visibility&quot;: true,
+    &quot;gfiAttributes&quot;: &quot;ignore&quot;
+},
+</code></pre></div></div></div></sec>
+<p><strong>Aufg. 3</strong> Definieren Sie einen WMTS Layer mit der Basis-URL <code>https://tiles.geoservice.dlr.de/service/wmts?SERVICE=WMTS&amp;REQUEST=GetCapabilities</code>. Integrieren SIe diesen in das Portal.</p>
+<sec data-title="Hint" data-id="section2" data-show="true" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Hint<a class="pull-right section atTitle btn btn-default" target="section2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="section2"><div class="panel-body">
+<pre><code class="lang-json">    {
+        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;2020&quot;</span>,
+        <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;EOC Basemap&quot;</span>,
+        <span class="hljs-string">&quot;capabilitiesUrl&quot;</span>: <span class="hljs-string">&quot;https://tiles.geoservice.dlr.de/service/wmts?SERVICE=WMTS&amp;REQUEST=GetCapabilities&quot;</span>,
+        <span class="hljs-string">&quot;typ&quot;</span>: <span class="hljs-string">&quot;WMTS&quot;</span>,
+        <span class="hljs-string">&quot;layers&quot;</span>: <span class="hljs-string">&quot;eoc:basemap&quot;</span>,
+        <span class="hljs-string">&quot;optionsFromCapabilities&quot;</span>: <span class="hljs-literal">true</span>
+    },
+</code></pre>
+</div></div></div></sec>
+<p><strong>Aufg. 4</strong> &#xC4;ndern Sie das Logo der Anwendung in folgendes Bild: <code>https://www.fossgis.de/logos/FOSSGIS@2x.png</code></p>
+<p><strong>Aufg. 5</strong> &#xC4;ndern Sie den Titel der Webseite (taucht oben in der Browser Leiste auf).</p>
+<sec data-title="Hint" data-id="section3" data-show="true" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Hint<a class="pull-right section atTitle btn btn-default" target="section3"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="section3"><div class="panel-body">
+<p><code>index.html</code> --&gt; <title></title></p>
+</div></div></div></sec>
+<p><strong>Aufg. 6</strong> F&#xFC;gen Sie die Map-Control <code>Overview Map</code> dem Portal hinzu. Dies soll initial eingeblendet sein. W&#xE4;hlen Sie den Layer aus Aufgabe 1 f&#xFC;r die Overview Map aus.</p>
+<sec data-title="Hint" data-id="section4" data-show="true" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Hint<a class="pull-right section atTitle btn btn-default" target="section4"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="section4"><div class="panel-body">
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;overviewMap&quot;</span>: {
+        <span class="hljs-string">&quot;resolution&quot;</span>: <span class="hljs-number">305.7487246381551</span>,
+        <span class="hljs-string">&quot;layerId&quot;</span>: <span class="hljs-string">&quot;1000&quot;</span>,
+        <span class="hljs-string">&quot;isInitOpen&quot;</span>: <span class="hljs-literal">true</span>
+    }
+}
+</code></pre>
+</div></div></div></sec>
+<footer class="page-footer">FOSSGIS 2022<span class="footer-modification">Last modified: 
 2022-03-11 07:56:20
-</span></footer></li>
-</ol>
-
+</span></footer>
                                 
                                 </section>
                             
@@ -431,12 +467,12 @@
 
             
                 
-                <a href="../basics/npm.html" class="navigation navigation-prev " aria-label="Previous page: Basiswissen NPM">
+                <a href="../mpadmin/" class="navigation navigation-prev " aria-label="Previous page: Masterportal Admin">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../config/" class="navigation navigation-next " aria-label="Next page: Konfiguration">
+                <a href="../customConfig/" class="navigation navigation-next " aria-label="Next page: Erweiterte Konfiguration">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -447,7 +483,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Entwicklungssetup","level":"1.4","depth":1,"next":{"title":"Konfiguration","level":"1.5","depth":1,"path":"config/README.md","ref":"config/README.md","articles":[{"title":"Globale Konfiguration","level":"1.5.1","depth":2,"path":"config/globalConfig.md","ref":"config/globalConfig.md","articles":[]},{"title":"Portalkonfiguration","level":"1.5.2","depth":2,"path":"config/portalConfig.md","ref":"config/portalConfig.md","articles":[]}]},"previous":{"title":"Basiswissen NPM","level":"1.3.1","depth":2,"path":"basics/npm.md","ref":"basics/npm.md","articles":[]},"dir":"ltr"},"config":{"plugins":["advanced-emoji","image-captions","pagefooter","richquotes@0.0.9","codeblock-label","sectionx-ex","logo"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"pagefooter":{},"logo":{"rootStyle":"text-align: center; padding: 10px;","logo":"https://www.masterportal.org/files/cto_layout/themedesigner/uploads/LGV_Masterportal_logo_quer_rgb_RZ.png","url":"https://www.masterportal.org","logoStyle":"width: 150px;"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"sectionx":{"tag":"b"},"highlight":{},"page-footer":{"footer":"FOSSGIS 2022","label":"Last modified: ","format":"YYYY-MM-DD HH:mm:ss","utc":true},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":"_CAPTION_","variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"workshopName":"Mastering the Masterportal introduction","osGeoLiveVersion":"14","authors":[{"name":"Hannes Blitza","mail":"blitza@terrestris.de"}],"_pictures":[{"backlink":"index.html#fig1.1.1","level":"1.1","list_caption":"Figure: Masterportal Logo","alt":"Masterportal Logo","nro":1,"url":"./assets/LGV_Masterportal_quer_rgb.png","index":1,"caption_template":"_CAPTION_","label":"Masterportal Logo","attributes":{},"skip":false,"key":"1.1.1"},{"backlink":"introduction/index.html#fig1.2.1","level":"1.2","list_caption":"Figure: Die Startansicht der OSGeo Live {{ book.osGeoLiveVersion }} auf Ihrem Rechner.","alt":"Die Startansicht der OSGeo Live {{ book.osGeoLiveVersion }} auf Ihrem Rechner.","nro":2,"url":"../assets/startview.png","index":1,"caption_template":"_CAPTION_","label":"Die Startansicht der OSGeo Live {{ book.osGeoLiveVersion }} auf Ihrem Rechner.","attributes":{},"skip":false,"key":"1.2.1"},{"backlink":"basics/npm.html#fig1.3.1.1","level":"1.3.1","list_caption":"Figure: npm Logo","alt":"npm Logo","nro":3,"url":"../assets/npm_logo.png","index":1,"caption_template":"_CAPTION_","label":"npm Logo","attributes":{},"skip":false,"key":"1.3.1.1"},{"backlink":"mpadmin/index.html#fig1.6.1","level":"1.6","list_caption":"Figure: MP Admin","alt":"MP Admin","nro":4,"url":"../assets//screenshot-masterportal-admin-01.jpeg","index":1,"caption_template":"_CAPTION_","label":"MP Admin","attributes":{},"skip":false,"key":"1.6.1"},{"backlink":"addons/config.html#fig1.9.3.1","level":"1.9.3","list_caption":"Figure: COG Addon","alt":"COG Addon","nro":5,"url":"../assets/addon.png","index":1,"caption_template":"_CAPTION_","label":"COG Addon","attributes":{},"skip":false,"key":"1.9.3.1"}]},"title":"Mastering the Masterportal","language":"de","gitbook":"*","description":"GeoServer introduction workshop materials"},"file":{"path":"devsetup/README.md","mtime":"2022-03-11T07:56:20.623Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2022-03-11T07:57:02.886Z"},"basePath":"..","book":{"language":"de"}});
+            gitbook.page.hasChanged({"page":{"title":"Übungsaufgaben","level":"1.7","depth":1,"next":{"title":"Erweiterte Konfiguration","level":"1.8","depth":1,"path":"customConfig/README.md","ref":"customConfig/README.md","articles":[]},"previous":{"title":"Masterportal Admin","level":"1.6","depth":1,"path":"mpadmin/README.md","ref":"mpadmin/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["advanced-emoji","image-captions","pagefooter","richquotes@0.0.9","codeblock-label","sectionx-ex","logo"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"pagefooter":{},"logo":{"rootStyle":"text-align: center; padding: 10px;","logo":"https://www.masterportal.org/files/cto_layout/themedesigner/uploads/LGV_Masterportal_logo_quer_rgb_RZ.png","url":"https://www.masterportal.org","logoStyle":"width: 150px;"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"sectionx":{"tag":"b"},"highlight":{},"page-footer":{"footer":"FOSSGIS 2022","label":"Last modified: ","format":"YYYY-MM-DD HH:mm:ss","utc":true},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":"_CAPTION_","variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"workshopName":"Mastering the Masterportal introduction","osGeoLiveVersion":"14","authors":[{"name":"Hannes Blitza","mail":"blitza@terrestris.de"}],"_pictures":[{"backlink":"index.html#fig1.1.1","level":"1.1","list_caption":"Figure: Masterportal Logo","alt":"Masterportal Logo","nro":1,"url":"./assets/LGV_Masterportal_quer_rgb.png","index":1,"caption_template":"_CAPTION_","label":"Masterportal Logo","attributes":{},"skip":false,"key":"1.1.1"},{"backlink":"introduction/index.html#fig1.2.1","level":"1.2","list_caption":"Figure: Die Startansicht der OSGeo Live {{ book.osGeoLiveVersion }} auf Ihrem Rechner.","alt":"Die Startansicht der OSGeo Live {{ book.osGeoLiveVersion }} auf Ihrem Rechner.","nro":2,"url":"../assets/startview.png","index":1,"caption_template":"_CAPTION_","label":"Die Startansicht der OSGeo Live {{ book.osGeoLiveVersion }} auf Ihrem Rechner.","attributes":{},"skip":false,"key":"1.2.1"},{"backlink":"basics/npm.html#fig1.3.1.1","level":"1.3.1","list_caption":"Figure: npm Logo","alt":"npm Logo","nro":3,"url":"../assets/npm_logo.png","index":1,"caption_template":"_CAPTION_","label":"npm Logo","attributes":{},"skip":false,"key":"1.3.1.1"},{"backlink":"mpadmin/index.html#fig1.6.1","level":"1.6","list_caption":"Figure: MP Admin","alt":"MP Admin","nro":4,"url":"../assets//screenshot-masterportal-admin-01.jpeg","index":1,"caption_template":"_CAPTION_","label":"MP Admin","attributes":{},"skip":false,"key":"1.6.1"},{"backlink":"addons/config.html#fig1.9.3.1","level":"1.9.3","list_caption":"Figure: COG Addon","alt":"COG Addon","nro":5,"url":"../assets/addon.png","index":1,"caption_template":"_CAPTION_","label":"COG Addon","attributes":{},"skip":false,"key":"1.9.3.1"}]},"title":"Mastering the Masterportal","language":"de","gitbook":"*","description":"GeoServer introduction workshop materials"},"file":{"path":"exercises/README.md","mtime":"2022-03-11T07:56:20.623Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2022-03-11T07:57:02.886Z"},"basePath":"..","book":{"language":"de"}});
         });
     </script>
 </div>
