@@ -6,9 +6,9 @@ Herzlich Willkommen beim **Mastering the Masterportal** Workshop. :wave:
 
 Dieser Workshop wurde für die Verwendung auf der [OSGeo-Live {{ book.osGeoLiveVersion }} DVD](https://live.osgeo.org) entwickelt und soll Ihnen einen umfassenden Überblick über das Open Source Masterportal als Web-GIS-Lösung geben.
 
-> **Info**
+<!-- > **Info**
 >
-> Der Workshop kann [hier als PDF-Version]({{ book.workshopPdfUrlDe }}) heruntergeladen werden.
+> Der Workshop kann [hier als PDF-Version]({{ book.workshopPdfUrlDe }}) heruntergeladen werden. -->
 
 # Allgemeines
 
