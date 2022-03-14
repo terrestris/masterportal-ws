@@ -43,7 +43,7 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         branch: gh-pages
-        folder: build
+        folder: _book
         target-folder: v${{ env.VERSION }}
 
     - name: Deploy (to docs/latest) 🚀
@@ -51,5 +51,5 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         branch: gh-pages
-        folder: build
+        folder: _book
         target-folder: latest
