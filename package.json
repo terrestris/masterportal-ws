@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "honkit build",
-    "serve": "honkit serve"
+    "clean": "rm -rf _book build",
+    "serve": "honkit serve",
+    "build:web": "honkit build",
+    "build:pdf": "honkit pdf ./ _book/masterportal-ws.pdf",
+    "build:epub": "honkit epub ./ _book/masterportal-ws.epub",
+    "build": "npm run clean && npm run build:web && npm run build:pdf && npm run build:epub"
   },
   "keywords": [],
   "author": "",
