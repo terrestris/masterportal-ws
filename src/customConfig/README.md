@@ -18,7 +18,7 @@ Wir passen eine zentrale Farbvariable an im Development Modus und bauen hinterhe
 
 1. Öffnen Sie im Code-Editor die Datei `variables.scss`. Hier befinden sich sämtliche Farbwerte, aus denen die einzelnen Oberflächenelemente referenziert werden (Buttons, Hintergründe von Schaltflächen etc.).
 
-2. Suchen sie nach dem Key `$primary` (Tipp: Zeile 24 :grin: ).
+2. Suchen sie nach dem Key `$primary` (Tipp: Zeile 94 :grin: ).
 
 3. Passen Sie den Wert an. Zum Beispiel auf Hellblau: `#0087e0`.
 
@@ -26,10 +26,10 @@ Wir passen eine zentrale Farbvariable an im Development Modus und bauen hinterhe
   
   :confused: Jetzt sind die Map-Controls blau, aber was ist mit den Tool-Buttons? Ich meine explizit das Tool Datei-Import.
 
-5. Passen Sie die folgenden Variablen an:
-  `$secondary_focus: #0087e0;`
-  `$accent: #0087e0;`
-  `$accent_hover: darken($accent, 5%);`
+5. Passen Sie die folgenden Variablen an:  
+  `$secondary_focus: #0087e0;`  
+  `$accent: #0087e0;`  
+  `$accent_hover: darken($accent, 5%);`  
   
 6. Betrachten Sie das Ergebnis:
   ![Custom Control/Button Color](../assets/button_color.png)
@@ -38,7 +38,7 @@ Wir passen eine zentrale Farbvariable an im Development Modus und bauen hinterhe
 > ⚠️ **Warning**
 > Ändern Sie nicht zu viele Farbwerte.
 > Die EntwicklerInnen des Masterportals und des Oberflächen-Frameworks (Bootstrap) haben sich bei der Wahl der Farben viele Gedanken gemacht.
-> Es werden auch extra barrierearme color schemes verwendet, die sollte bedacht werden.
+> Es werden auch extra barrierearme color schemes verwendet, dies sollte bedacht werden.
 > Es sollte auch immer betrachtet werden, welche Farbwerte voneinander abhängen!  
 > Goldene Regel: Nach jeder Änderung, ausführlich das Portal testen!
 
