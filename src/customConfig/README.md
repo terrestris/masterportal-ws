@@ -1,4 +1,4 @@
-# Custom Konfiguration
+# Erweiterte Konfiguration
 
 ## 1. UseCase
 
@@ -6,7 +6,7 @@ Ich möchte die Hauptfarben des Portals anpassen! Die Buttons sollen nicht rot, 
 
 **Überlegung**: 
 
-Es gibt im Ordner `mastercode/2_17_1/css` eine `masterportal.css`. Kann ich nicht einfach hier den Farbwert überschreiben? :question:
+Es gibt im Ordner `mastercode/2_30_0/css` eine `masterportal.css`. Kann ich nicht einfach hier den Farbwert überschreiben? :question:
 
 :warning:  Woher weiß man, welche CSS-Properties alle angepasst werden? Die css Datei > 2.500 Zeilen und > 300.000 Zeichen!
 
@@ -34,14 +34,11 @@ Wir passen eine zentrale Farbvariable an im Development Modus und bauen hinterhe
 6. Betrachten Sie das Ergebnis:
   ![Custom Control/Button Color](../assets/button_color.png)
   Nun ist der Footer noch blassgrau. Ich möchte diesen gerne ebenfall blau haben.
-7. Öffnen Sie im Code-Editor die Datei `Footer.vue` und schauen Sie sich den Style Block (ab Zeile 126) an.
 
-  **Erläuterung**: Es wird hier die `css/mixins.scss` importiert, die wiederum die `variables.scss` importiert. Sämtliche dort angegebene Variablen sind hier im Style-Block verfügbar.  
-  Ändern Sie den Value von `backgroundColor` auf `$primary`.
-
-> :warning: **Warning**
+> ⚠️ **Warning**
 > Ändern Sie nicht zu viele Farbwerte.
-> Die EntwicklerInnen des Masterportals und die EntwicklerInnen der Oberflächen-Frameworks (Bootstrap) haben sich bei der Wahl der Farben viele Gedanken gemacht.  
+> Die EntwicklerInnen des Masterportals und des Oberflächen-Frameworks (Bootstrap) haben sich bei der Wahl der Farben viele Gedanken gemacht.
+> Es werden auch extra barrierearme color schemes verwendet, die sollte bedacht werden.
 > Es sollte auch immer betrachtet werden, welche Farbwerte voneinander abhängen!  
 > Goldene Regel: Nach jeder Änderung, ausführlich das Portal testen!
 
@@ -86,6 +83,8 @@ Der MapMarker beim GFI ist schön und hat einen hohen Wiedererkennungswert. Trot
     }
   ```
 3. Weisen Sie in der `config.js` dem Property `pointStyleId` den neuen Stil `custom-point` zu.
+4. Hier muss das Dev-Setup ggf. neugestartet werden (Strg+C, dann erneut `npm run start`), um den Effekt zu sehen.
+
 
 ## 3. UseCase
 

@@ -4,7 +4,11 @@
 > Im Masterportal Folder (cloned Bitbucket-Repository) muss vorher ein `npm i` ausgeführt wurden sein.
 > Dann wird das Entwicklungssetup gestartet per `npm run start`.
 > Das Starten dauert einige Zeit, es werden einige Warnings angezeigt, die aber getrost ignoriert werden können.  
-> Sobald der Log `
+> Sobald der Log `Compiled successfully` erscheint, kann losgelegt werden.
+>
+
+> 📝
+> Verwenden Sie `Featherpad` als Text-Editor für die folgenden Aufgaben.
 
 **Aufg. 1** Konfigurieren Sie das Messen-Tool so, dass für das Messen der Fläche stets auch Dezimeter angezeigt werden.
 

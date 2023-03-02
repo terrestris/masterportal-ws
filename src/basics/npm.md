@@ -45,7 +45,7 @@ Der Befehl `npm init` in Ihrem Projektordner öffnet einen interaktiven Dialog z
 }
 ```
 
-Weitere Infos hier: [npm docs](https://docs.npmjs.com/).
+Weitere Infos hier: [npm docs package.json](https://docs.npmjs.com/cli/v9/configuring-npm/package-json).
 
 ### Installieren von packages mittels npm
 

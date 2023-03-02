@@ -1,11 +1,11 @@
 {
   "title": "Mastering the Masterportal",
-  "description": "GeoServer introduction workshop materials",
+  "description": "Masterportal workshop FOSSGIS 2023",
   "language": "de",
   "root": "./src",
   "variables": {
     "workshopName": "Mastering the Masterportal introduction",
-    "osGeoLiveVersion": "14",
+    "osGeoLiveVersion": "15.0",
     "authors": [
       {
         "name": "Hannes Blitza",
@@ -33,7 +33,7 @@
       "caption": "_CAPTION_"
     },
     "page-footer": {
-      "footer": "FOSSGIS 2022",
+      "footer": "FOSSGIS 2023",
       "label": "Last modified: ",
       "format": "YYYY-MM-DD HH:mm:ss",
       "utc": true
