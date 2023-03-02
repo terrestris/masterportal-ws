@@ -4,14 +4,16 @@ Bevor wir mit dem Workshop starten können, führen Sie bitte die folgenden Schr
 aus:
 
 * Rechner mit OSGeoLive-Medium hochfahren
-* Sprache auswählen (Deutsch für korrekte Tastaturbelegung)
+
+Es wird angenommen, dass die OSGeoLive bereits installiert ist. Falls nicht, kann der Live-Modus gestartet werden:
+
 * *Lubuntu ohne Installation ausprobieren* auswählen
 * Benutzer: user; Passwort: user (wird vermutlich nicht benötigt)
 
 > **Warning**
 >
 > :warning:
-> Sollte die Tastaturbelegung noch auf **US** gestellt sein, öffnen Sie ein Terminal (`Strg+T`)
+> Sollte die Tastaturbelegung noch auf **US** gestellt sein (siehe unten rechts in der Taskleiste), öffnen Sie ein Terminal (`Strg+T`)
 > und führen Sie folgenen Befehl aus: `setxkbmap -layout de`
     
-![Die Startansicht der OSGeo Live {{ book.osGeoLiveVersion }} auf Ihrem Rechner.](../assets/startview.png)
+![Die Startansicht der OSGeo Live {{ book.osGeoLiveVersion }} auf Ihrem Rechner.](../assets/startview_osgeo_v15.png)

@@ -6,13 +6,9 @@ Herzlich Willkommen beim **Mastering the Masterportal** Workshop. :wave:
 
 Dieser Workshop wurde für die Verwendung auf der [OSGeo-Live {{ book.osGeoLiveVersion }} DVD](https://live.osgeo.org) entwickelt und soll Ihnen einen umfassenden Überblick über das Open Source Masterportal als Web-GIS-Lösung geben.
 
-<!-- > **Info**
->
-> Der Workshop kann [hier als PDF-Version]({{ book.workshopPdfUrlDe }}) heruntergeladen werden. -->
-
 # Allgemeines
 
-Das Masterportal Projekt ermöglicht die Erstellung modularer und somit individueller Geoportale. Zum Aufbau einer Nutzer- und Entwicklungsgemeinschaft wurde die Implementierungsgemeinschaft ins Leben gerufen, die mittlerweile aus über 30 Partnern auf kommunaler, förderaler und Bundesebene besteht. Die wichtigsten Vernetzungs- und Entscheidungstreffen sind:
+Das Masterportal Projekt ermöglicht die Erstellung modularer und somit individueller Geoportale. Zum Aufbau einer Nutzer- und Entwicklungsgemeinschaft wurde die Implementierungspartnerschaft ins Leben gerufen, die mittlerweile aus über 35 PartnerInnen auf kommunaler, förderaler und Bundesebene besteht. Die wichtigsten Vernetzungs- und Entscheidungstreffen sind:
 
 * Strategisches Kommittee (steuert und kontroliert die strategische Richtung des Masterportals)
 * Technisches Kommittee (unterstützt das Strategische Kommittee in technischen Fragen)

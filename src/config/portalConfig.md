@@ -30,81 +30,93 @@ Die `config.json` enthält die gesamte Konfiguration der Portal-Oberfläche. In 
 Beispiel aus der `basic` Portalkonfiguration:
 
 ```json
-	"Portalconfig": {
+"Portalconfig": {
     "treeType": "light",
-		"searchBar": {
-			"komoot": {
-        "minChars": 3,
-        "serviceId": "11",
-        "limit": 20,
-        "lang": "de",
-        "lat": 53.6,
-        "lon": 10.0,
-        "bbox": "9.6,53.3,10.4,53.8"
+    "searchBar": {
+        "komoot": {
+            "minChars": 3,
+            "serviceId": "11",
+            "limit": 20,
+            "lang": "de",
+            "lat": 53.6,
+            "lon": 10.0,
+            "bbox": "9.6,53.3,10.4,53.8"
+        },
+        "visibleVector": {
+            "layerTypes": [
+                "WFS"
+            ]
+        },
+        "tree": {},
+        "startZoomLevel": 9,
+        "placeholder": "Suche nach: - Adresse - Aktiven WFS"
     },
-      "visibleVector": {},
-      "tree": {},
-			"startZoomLevel": 9,
-			"placeholder": "Suche nach: - Adresse - Aktiven WFS"
-		},
-		"mapView": {
-			"backgroundImage": "./resources/img/backgroundCanvas.jpeg",
-			"startCenter": [561210, 5932600],
-			"extent": [510000.0, 5850000.0, 625000.4, 6000000.0],
-			"startZoomLevel": 1
-		},
-		"menu": {
-			"tree": {
-				"name": "Themen"
-			},
-			"tools": {
-				"name": "Werkzeuge",
-				"children": {
-					"gfi": {
-            "name": "Informationen abfragen",
-						"active": true
-					},
-					"coordToolkit": {
-						"name": "Koordinaten"
-					},
-					"measure": {
-						"name": "Strecke / Fläche messen"
-					},
-					"draw": {
-						"name": "Zeichnen / Schreiben"
-					},
-					"fileImport": {
-            			"name": "Datei Import"
-					},
-					"saveSelection": {
-						"name": "Auswahl speichern"
-					}
-				}
-			},
-			"legend": {
-				"name": "Legende"
-			},
-			"info": {
-				"name": "Informationen",
-				"children": {
-					"staticlinks": [
-						{
-							"name": "Masterportal",
-							"url": "https://masterportal.org"
-						}
-					]
-				}
-			}
-		},
-		"controls": {
-			"zoom": true,
-			"orientation": {
-				"zoomMode": "once"
-			},
-			"attributions": true,
-			"mousePosition": true
-		}
-	}
+    "mapView": {
+        "backgroundImage": "./resources/img/backgroundCanvas.jpeg",
+        "startCenter": [
+            561210,
+            5932600
+        ],
+        "extent": [
+            510000.0,
+            5850000.0,
+            625000.4,
+            6000000.0
+        ],
+        "startZoomLevel": 1
+    },
+    "menu": {
+        "tree": {
+            "name": "Themen"
+        },
+        "tools": {
+            "name": "Werkzeuge",
+            "children": {
+                "gfi": {
+                    "name": "Informationen abfragen",
+                    "active": true
+                },
+                "coordToolkit": {
+                    "name": "Koordinaten"
+                },
+                "measure": {
+                    "name": "Strecke / Fläche messen"
+                },
+                "draw": {
+                    "name": "Zeichnen / Schreiben"
+                },
+                "fileImport": {
+                    "name": "Datei Import"
+                },
+                "saveSelection": {
+                    "name": "Auswahl speichern"
+                }
+            }
+        },
+        "legend": {
+            "name": "Legende"
+        },
+        "info": {
+            "name": "Informationen",
+            "children": {
+                "staticlinks": [
+                    {
+                        "name": "Masterportal",
+                        "url": "https://masterportal.org"
+                    }
+                ]
+            }
+        }
+    },
+    "controls": {
+        "zoom": true,
+        "orientation": {
+            "zoomMode": "once"
+        },
+        "attributions": true,
+        "mousePosition": true
+    }
+}
 ```
 
 ### Themenconfig
@@ -131,7 +143,7 @@ Ein Minimal-Beispiel (`treetype: custom`):
     "Fachdaten": {
       "Ordner": [
         {
-          "Titel": "Fahhrad",
+          "Titel": "Fahrrad",
           "Layer": [
             {
               "id": "10882"
