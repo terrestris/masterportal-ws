@@ -21,7 +21,8 @@ Fügen Sie im Block `tools` -> `children` den folgenden Block hinzu:
           }
 ```
 
-Nun ist das Addon fertig eingebunden. :exclamation: Bitte beachten Sie, dass dies keinesfalls für eine Produktiv-Anwendung gedacht ist, es dient lediglich der Demonstration.  
+Nun ist das Addon fertig eingebunden.  
+:exclamation: Bitte beachten Sie, dass dies keinesfalls für eine Produktiv-Anwendung gedacht ist, es dient lediglich der Demonstration. ☝
 
 :question: Was fehlt: :
 - Dokumentation
