@@ -3,7 +3,7 @@
 <html lang="de">
     <head>
         <meta charset="UTF-8">
-        <title>Store &#xB7; Mastering the Masterportal</title>
+        <title>Suche &#xB7; Mastering the Masterportal</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content>
         <meta name="generator" content="HonKit 3.7.1">
@@ -84,10 +84,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="translations.html">
+    <link rel="next" href="search.html">
     
     
-    <link rel="prev" href="./">
+    <link rel="prev" href="layer.html">
     
 
     </head>
@@ -271,9 +271,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="../exercises/">
+        <li class="chapter " data-level="1.9" data-path="./">
             
-                <a href="../exercises/">
+                <a href="./">
             
                     
                     &#xDC;bungsaufgaben
@@ -285,9 +285,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.9.1" data-path="../exercises/general.html">
+        <li class="chapter " data-level="1.9.1" data-path="general.html">
             
-                <a href="../exercises/general.html">
+                <a href="general.html">
             
                     
                     Allgemeine Konfiguration
@@ -298,9 +298,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.2" data-path="../exercises/layer.html">
+        <li class="chapter " data-level="1.9.2" data-path="layer.html">
             
-                <a href="../exercises/layer.html">
+                <a href="layer.html">
             
                     
                     Layer
@@ -311,22 +311,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.3" data-path="../exercises/tools.html">
+        <li class="chapter active" data-level="1.9.3" data-path="tools.html">
             
-                <a href="../exercises/tools.html">
-            
-                    
-                    Suche
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.4" data-path="../exercises/search.html">
-            
-                <a href="../exercises/search.html">
+                <a href="tools.html">
             
                     
                     Suche
@@ -337,9 +324,22 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.5" data-path="../exercises/build.html">
+        <li class="chapter " data-level="1.9.4" data-path="search.html">
             
-                <a href="../exercises/build.html">
+                <a href="search.html">
+            
+                    
+                    Suche
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="build.html">
+            
+                <a href="build.html">
             
                     
                     Built
@@ -368,9 +368,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11" data-path="./">
+        <li class="chapter " data-level="1.11" data-path="../addons/">
             
-                <a href="./">
+                <a href="../addons/">
             
                     
                     Addons
@@ -382,9 +382,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.11.1" data-path="store.html">
+        <li class="chapter " data-level="1.11.1" data-path="../addons/store.html">
             
-                <a href="store.html">
+                <a href="../addons/store.html">
             
                     
                     Store
@@ -395,9 +395,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.2" data-path="translations.html">
+        <li class="chapter " data-level="1.11.2" data-path="../addons/translations.html">
             
-                <a href="translations.html">
+                <a href="../addons/translations.html">
             
                     
                     i18n
@@ -408,9 +408,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.3" data-path="config.html">
+        <li class="chapter " data-level="1.11.3" data-path="../addons/config.html">
             
-                <a href="config.html">
+                <a href="../addons/config.html">
             
                     
                     Konfiguration
@@ -456,7 +456,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="..">Store</a>
+        <a href="..">Suche</a>
     </h1>
 </div>
 
@@ -471,88 +471,48 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="addon-store">Addon Store</h2>
-<p>Im Masterportal wird der <code>state manager</code> <a href="https://vuex.vuejs.org/" target="_blank">Vuex</a> verwendet.<br>Bei komplexen Anwendungen ist es sehr hilfreich einen zentralen Store zu haben, &#xFC;ber den s&#xE4;mtliche Module inkl. aller Tools und Addons kommunizieren. Wenn unser Addon Infos aus der <code>Map-Component</code> erhalten m&#xF6;chte, beispielsweise um einen Layer hinzuzuf&#xFC;gen, funktioniert dies &#xFC;ber Vuex. Ein einfaches Beispiel erfolgt im Laufe dieser Addon-Entwicklung.</p>
-<ul>
-<li><p>Legen Sie im Pfad addons/cogImporter einen Ordner namens <code>store</code> an.</p>
-</li>
-<li><p>Legen Sie eine <code>index.js</code> mit folgendem Inhalt an:</p>
-</li>
-</ul>
-<p></p><p class="code-label">index.js</p><p></p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> GenericTool <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;../../../src/modules/tools/indexTools&quot;</span>;
-<span class="hljs-keyword">import</span> composeModules <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;../../../src/app-store/utils/composeModules&quot;</span>;
-<span class="hljs-keyword">import</span> getters <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./getters&quot;</span>;
-<span class="hljs-keyword">import</span> mutations <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./mutations&quot;</span>;
-<span class="hljs-keyword">import</span> state <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./state&quot;</span>;
-
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> composeModules([GenericTool, {
-    <span class="hljs-attr">namespaced</span>: <span class="hljs-literal">true</span>,
-    state,
-    mutations,
-    getters
-}]);
+                                <h1 id="konfiguration-von-werkzeugen">Konfiguration von Werkzeugen</h1>
+<p><strong>Aufg. 7:</strong> Konfigurieren Sie das Messen-Tool so, dass f&#xFC;r das Messen der Fl&#xE4;che stets auch Dezimeter angezeigt werden. Zudem sollen nautische Seemeilen ausw&#xE4;hlbar sein.</p>
+<sec data-title="Hint" data-id="section7hint" data-show="true" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Hint<a class="pull-right section atTitle btn btn-default" target="section7hint"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="section7hint"><div class="panel-body">
+<p>Schauen Sie in der <code>config.json.md</code> nach <code>Portalconfig.menu.tool.measure</code>!</p>
+</div></div></div></sec>
+<sec data-title="L&#xF6;sung" data-id="section7solution" data-show="true" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>L&#xF6;sung<a class="pull-right section atTitle btn btn-default" target="section7solution"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="section7solution"><div class="panel-body">
+<p>&#xC4;ndern Sie die Konfiguration f&#xFC;r das Messen-Werkzeug in der <code>config.json</code> wie folgt:</p>
+<pre><code class="lang-json">    <span class="hljs-string">&quot;measure&quot;</span>: {
+        <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;translate#common:menu.tools.measure&quot;</span>,
+        <span class="hljs-string">&quot;measurementAccuracy&quot;</span>: <span class="hljs-string">&quot;decimeter&quot;</span>,
+        <span class="hljs-string">&quot;lineStringUnits&quot;</span>: [<span class="hljs-string">&quot;m&quot;</span>, <span class="hljs-string">&quot;km&quot;</span>, <span class="hljs-string">&quot;nm&quot;</span>]
+    }
 </code></pre>
-<ul>
-<li>Legen Sie die folgenden Dateien an:</li>
-</ul>
-<p>Zun&#xE4;chst den State des Addons:</p>
-<p></p><p class="code-label">state.js</p><p></p>
-<pre><code class="lang-js"><span class="hljs-comment">/**
- * User type definition
- * <span class="hljs-doctag">@typedef <span class="hljs-type">{Object}</span> <span class="hljs-variable">cogImporterState</span></span>
- * <span class="hljs-doctag">@property <span class="hljs-type">{Boolean}</span> </span>active if true, CogImporter will be rendered
- * <span class="hljs-doctag">@property <span class="hljs-type">{String}</span> </span>id id of the CogImporter component
- * <span class="hljs-doctag">@property <span class="hljs-type">{String}</span> </span>icon icon next to title (config-param)
- * <span class="hljs-doctag">@property <span class="hljs-type">{Boolean}</span> </span>renderToWindow if true, tool is rendered in a window, else in sidebar (config-param)
- * <span class="hljs-doctag">@property <span class="hljs-type">{Boolean}</span> </span>resizableWindow if true, window is resizable (config-param)
- * <span class="hljs-doctag">@property <span class="hljs-type">{Boolean}</span> </span>isVisibleInMenu if true, tool is selectable in menu (config-param)
- * <span class="hljs-doctag">@property <span class="hljs-type">{Boolean}</span> </span>deactivateGFI flag if tool should deactivate gfi (config-param)
- */</span>
-<span class="hljs-keyword">const</span> state = {
-    <span class="hljs-attr">active</span>: <span class="hljs-literal">false</span>,
-    <span class="hljs-attr">id</span>: <span class="hljs-string">&quot;cogImporter&quot;</span>,
-    <span class="hljs-comment">// defaults for config.json parameters</span>
-    <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;translate#additional:modules.tools.cogImporter.title&quot;</span>,
-    <span class="hljs-attr">icon</span>: <span class="hljs-string">&quot;bi-wrench&quot;</span>,
-    <span class="hljs-attr">renderToWindow</span>: <span class="hljs-literal">true</span>,
-    <span class="hljs-attr">resizableWindow</span>: <span class="hljs-literal">true</span>,
-    <span class="hljs-attr">isVisibleInMenu</span>: <span class="hljs-literal">true</span>,
-    <span class="hljs-attr">deactivateGFI</span>: <span class="hljs-literal">true</span>
-};
-
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> state;
+<p><strong>Info:</strong> Wenn der Name mit einem <code>translate#</code> beginnt, folgt da hinter der Key in den &#xDC;bersetzungsdateien <code>i18n</code>. In mehrsprachigen Modulen sollte dies immer der Fall sein, da ansonsten der Name des Tools im Portal nicht &#xFC;bersetzt wird.</p>
+</div></div></div></sec>
+<p><strong>Aufg. 8:</strong> F&#xFC;gen Sie die Map-Control <code>Overview Map</code> dem Portal hinzu. Dies soll initial eingeblendet sein. W&#xE4;hlen Sie den Layer aus Aufgabe 1 f&#xFC;r die Overview Map aus.</p>
+<sec data-title="Hint" data-id="section8hint" data-show="true" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Hint<a class="pull-right section atTitle btn btn-default" target="section8hint"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="section8hint"><div class="panel-body">
+<p>Schauen Sie in der <code>config.json.md</code> nach <code>Portalconfig.controls.overviewMap</code>!</p>
+</div></div></div></sec>
+<sec data-title="L&#xF6;sung" data-id="section8solution" data-show="true" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>L&#xF6;sung<a class="pull-right section atTitle btn btn-default" target="section8solution"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="section8solution"><div class="panel-body">
+<p>&#xC4;ndern Sie die Konfiguration f&#xFC;r die <code>overviewMap</code> Control folgenderma&#xDF;en:</p>
+<pre><code class="lang-json">    <span class="hljs-string">&quot;overviewMap&quot;</span>: {
+        <span class="hljs-string">&quot;layerId&quot;</span>: <span class="hljs-string">&quot;1000&quot;</span>,
+        <span class="hljs-string">&quot;isInitOpen&quot;</span>: <span class="hljs-literal">true</span>
+    }
 </code></pre>
-<p>Anschlie&#xDF;end die <code>getters</code> und <code>mutations</code>:</p>
-<p></p><p class="code-label">getters.js</p><p></p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> {generateSimpleGetters} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;.../../../src/app-store/utils/generators&quot;</span>;
-<span class="hljs-keyword">import</span> state <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./state&quot;</span>;
-
-<span class="hljs-keyword">const</span> getters = {
-    ...generateSimpleGetters(state)
-};
-
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> getters;
-</code></pre>
-<p></p><p class="code-label">mutations.js</p><p></p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> {generateSimpleMutations} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;../../../src/app-store/utils/generators&quot;</span>;
-<span class="hljs-keyword">import</span> state <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./state&quot;</span>;
-
-<span class="hljs-keyword">const</span> mutations = {
-    <span class="hljs-comment">/**
-     * Creates from every state-key a setter.
-     * For example, given a state object {key: value}, an object
-     * {setKey:   (state, payload) =&gt; *   state[key] = payload * }
-     * will be returned.
-     */</span>
-    ...generateSimpleMutations(state)
-};
-
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> mutations;
-</code></pre>
-<footer class="page-footer">FOSSGIS 2023<span class="footer-modification">Last modified: 
+</div></div></div></sec>
+<p><strong>Aufg. 9:</strong> Konfigurieren Sie das Messen-Tool so, dass f&#xFC;r das Messen der Fl&#xE4;che stets auch Dezimeter angezeigt werden. Zudem sollen nautische Seemeilen ausw&#xE4;hlbar sein.</p>
+<sec data-title="Hint" data-id="section9hint" data-show="true" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Hint<a class="pull-right section atTitle btn btn-default" target="section9hint"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="section9hint"><div class="panel-body">
+<p>Schauen Sie in der <code>config.json.md</code> nach <code>Portalconfig.menu.tool.measure</code>!</p>
+</div></div></div></sec>
+<sec data-title="L&#xF6;sung" data-id="section9solution" data-show="true" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>L&#xF6;sung<a class="pull-right section atTitle btn btn-default" target="section9solution"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="section9solution"><div class="panel-body">
+<p>&#xC4;ndern Sie die Konfiguration f&#xFC;r das Messen-Werkzeug in der <code>config.json</code> wie folgt:</p>
+<p><code>json
+    &quot;measure&quot;: {
+        &quot;name&quot;: &quot;translate#common:menu.tools.measure&quot;,
+        &quot;measurementAccuracy&quot;: &quot;decimeter&quot;,
+        &quot;lineStringUnits&quot;: [&quot;m&quot;, &quot;km&quot;, &quot;nm&quot;]
+    }</code><footer class="page-footer">FOSSGIS 2023<span class="footer-modification">Last modified: 
 2023-03-12 12:38:08
-</span></footer>
+</span></footer></p>
+</div></div></div></sec>
                                 
                                 </section>
                             
@@ -579,12 +539,12 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Addons">
+                <a href="layer.html" class="navigation navigation-prev " aria-label="Previous page: Layer">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="translations.html" class="navigation navigation-next " aria-label="Next page: i18n">
+                <a href="search.html" class="navigation navigation-next " aria-label="Next page: Suche">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -595,7 +555,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Store","level":"1.11.1","depth":2,"next":{"title":"i18n","level":"1.11.2","depth":2,"path":"addons/translations.md","ref":"addons/translations.md","articles":[]},"previous":{"title":"Addons","level":"1.11","depth":1,"path":"addons/README.md","ref":"addons/README.md","articles":[{"title":"Store","level":"1.11.1","depth":2,"path":"addons/store.md","ref":"addons/store.md","articles":[]},{"title":"i18n","level":"1.11.2","depth":2,"path":"addons/translations.md","ref":"addons/translations.md","articles":[]},{"title":"Konfiguration","level":"1.11.3","depth":2,"path":"addons/config.md","ref":"addons/config.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["advanced-emoji","image-captions","pagefooter","richquotes@0.0.9","codeblock-label","sectionx-ex","logo"],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"pagefooter":{},"logo":{"rootStyle":"text-align: center; padding: 10px;","logo":"https://www.masterportal.org/files/cto_layout/themedesigner/uploads/LGV_Masterportal_logo_quer_rgb_RZ.png","url":"https://www.masterportal.org","logoStyle":"width: 150px;"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"sectionx":{"tag":"b"},"highlight":{},"page-footer":{"footer":"FOSSGIS 2023","label":"Last modified: ","format":"YYYY-MM-DD HH:mm:ss","utc":true},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":"_CAPTION_","variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"workshopName":"Mastering the Masterportal introduction","osGeoLiveVersion":"15.0","authors":[{"name":"Hannes Blitza","mail":"blitza@terrestris.de"}],"_pictures":[{"backlink":"index.html#fig1.1.1","level":"1.1","list_caption":"Figure: Masterportal Logo","alt":"Masterportal Logo","nro":1,"url":"./assets/LGV_Masterportal_quer_rgb.png","index":1,"caption_template":"_CAPTION_","label":"Masterportal Logo","attributes":{},"skip":false,"key":"1.1.1"},{"backlink":"introduction/index.html#fig1.2.1","level":"1.2","list_caption":"Figure: Die Startansicht der OSGeo Live {{ book.osGeoLiveVersion }} auf Ihrem Rechner.","alt":"Die Startansicht der OSGeo Live {{ book.osGeoLiveVersion }} auf Ihrem Rechner.","nro":2,"url":"../assets/startview_osgeo_v15.png","index":1,"caption_template":"_CAPTION_","label":"Die Startansicht der OSGeo Live {{ book.osGeoLiveVersion }} auf Ihrem Rechner.","attributes":{},"skip":false,"key":"1.2.1"},{"backlink":"basics/npm.html#fig1.3.1.1","level":"1.3.1","list_caption":"Figure: npm Logo","alt":"npm Logo","nro":3,"url":"../assets/npm_logo.png","index":1,"caption_template":"_CAPTION_","label":"npm Logo","attributes":{},"skip":false,"key":"1.3.1.1"},{"backlink":"devsetup/index.html#fig1.4.1","level":"1.4","list_caption":"Figure: Startansicht des Portals basic.","alt":"Startansicht des Portals basic.","nro":4,"url":"../assets/mp_startview.png","index":1,"caption_template":"_CAPTION_","label":"Startansicht des Portals basic.","attributes":{},"skip":false,"key":"1.4.1"},{"backlink":"mpadmin/index.html#fig1.7.1","level":"1.7","list_caption":"Figure: MP Admin","alt":"MP Admin","nro":5,"url":"../assets//screenshot-masterportal-admin-01.jpeg","index":1,"caption_template":"_CAPTION_","label":"MP Admin","attributes":{},"skip":false,"key":"1.7.1"},{"backlink":"addons/config.html#fig1.11.3.1","level":"1.11.3","list_caption":"Figure: COG Addon","alt":"COG Addon","nro":6,"url":"../assets/addon.png","index":1,"caption_template":"_CAPTION_","label":"COG Addon","attributes":{},"skip":false,"key":"1.11.3.1"}]},"title":"Mastering the Masterportal","language":"de","gitbook":"*","description":"Masterportal workshop FOSSGIS 2023"},"file":{"path":"addons/store.md","mtime":"2023-03-12T12:38:08.493Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2023-03-12T12:39:09.694Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Suche","level":"1.9.3","depth":2,"next":{"title":"Suche","level":"1.9.4","depth":2,"path":"exercises/search.md","ref":"exercises/search.md","articles":[]},"previous":{"title":"Layer","level":"1.9.2","depth":2,"path":"exercises/layer.md","ref":"exercises/layer.md","articles":[]},"dir":"ltr"},"config":{"plugins":["advanced-emoji","image-captions","pagefooter","richquotes@0.0.9","codeblock-label","sectionx-ex","logo"],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"pagefooter":{},"logo":{"rootStyle":"text-align: center; padding: 10px;","logo":"https://www.masterportal.org/files/cto_layout/themedesigner/uploads/LGV_Masterportal_logo_quer_rgb_RZ.png","url":"https://www.masterportal.org","logoStyle":"width: 150px;"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"sectionx":{"tag":"b"},"highlight":{},"page-footer":{"footer":"FOSSGIS 2023","label":"Last modified: ","format":"YYYY-MM-DD HH:mm:ss","utc":true},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":"_CAPTION_","variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"workshopName":"Mastering the Masterportal introduction","osGeoLiveVersion":"15.0","authors":[{"name":"Hannes Blitza","mail":"blitza@terrestris.de"}],"_pictures":[{"backlink":"index.html#fig1.1.1","level":"1.1","list_caption":"Figure: Masterportal Logo","alt":"Masterportal Logo","nro":1,"url":"./assets/LGV_Masterportal_quer_rgb.png","index":1,"caption_template":"_CAPTION_","label":"Masterportal Logo","attributes":{},"skip":false,"key":"1.1.1"},{"backlink":"introduction/index.html#fig1.2.1","level":"1.2","list_caption":"Figure: Die Startansicht der OSGeo Live {{ book.osGeoLiveVersion }} auf Ihrem Rechner.","alt":"Die Startansicht der OSGeo Live {{ book.osGeoLiveVersion }} auf Ihrem Rechner.","nro":2,"url":"../assets/startview_osgeo_v15.png","index":1,"caption_template":"_CAPTION_","label":"Die Startansicht der OSGeo Live {{ book.osGeoLiveVersion }} auf Ihrem Rechner.","attributes":{},"skip":false,"key":"1.2.1"},{"backlink":"basics/npm.html#fig1.3.1.1","level":"1.3.1","list_caption":"Figure: npm Logo","alt":"npm Logo","nro":3,"url":"../assets/npm_logo.png","index":1,"caption_template":"_CAPTION_","label":"npm Logo","attributes":{},"skip":false,"key":"1.3.1.1"},{"backlink":"devsetup/index.html#fig1.4.1","level":"1.4","list_caption":"Figure: Startansicht des Portals basic.","alt":"Startansicht des Portals basic.","nro":4,"url":"../assets/mp_startview.png","index":1,"caption_template":"_CAPTION_","label":"Startansicht des Portals basic.","attributes":{},"skip":false,"key":"1.4.1"},{"backlink":"mpadmin/index.html#fig1.7.1","level":"1.7","list_caption":"Figure: MP Admin","alt":"MP Admin","nro":5,"url":"../assets//screenshot-masterportal-admin-01.jpeg","index":1,"caption_template":"_CAPTION_","label":"MP Admin","attributes":{},"skip":false,"key":"1.7.1"},{"backlink":"addons/config.html#fig1.11.3.1","level":"1.11.3","list_caption":"Figure: COG Addon","alt":"COG Addon","nro":6,"url":"../assets/addon.png","index":1,"caption_template":"_CAPTION_","label":"COG Addon","attributes":{},"skip":false,"key":"1.11.3.1"}]},"title":"Mastering the Masterportal","language":"de","gitbook":"*","description":"Masterportal workshop FOSSGIS 2023"},"file":{"path":"exercises/tools.md","mtime":"2023-03-12T12:38:08.521Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2023-03-12T12:39:09.694Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
