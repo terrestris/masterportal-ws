@@ -1,6 +1,8 @@
 # Addons
 
-Mittels eines Addons lässt sich die Funktionalität des Masterportals beliebig erweitern, ohne dass der **Core** verändert werden muss. Es lassen sich eigenständige `Tools` und `GfiThemes` entwickeln, die zu Beginn der Laufzeit importiert werden und fortan wie eigenständige Module funktionieren.
+Mittels eines Addons lässt sich die Funktionalität des Masterportals beliebig erweitern, ohne dass der **Core** verändert werden muss. Es lassen sich eigenständige `Tools` und `GfiThemes` entwickeln, die zu Beginn der Laufzeit importiert werden und fortan wie eigenständige Module funktionieren.  
+
+Es empfiehlt sich, die  [Vue.js devtools](https://github.com/vuejs/devtools) zu installieren. Diese bieten u.a. einen Live-Zugriff auf den Store.  
 
 Im Rahmen dieses Workshops soll ein kleines Addon entwickelt werden, das mit der `OpenLayers` Karte des Masterportals interagiert und dieser ein [Cloud Optimized GeoTIFF](https://www.cogeo.org/) hinzufügt.
 
@@ -43,17 +45,18 @@ export default {
 };
 ```
 
-- Erstellen im selben Verzeichnis einen Unterordner `components` und legen Sie hier die Datei `COGImporter.vue` an.
+Erstellen Sie dann einen Ordner namens `components` und erstellen Sie die folgende Datei `CogImporter.vue`:
 
-{% label %}COGImporter.vue{% endlabel %}
+{% label %}CogImporter.vue{% endlabel %}
 ```js
 <script>
-import ToolTemplate from "../../../src/modules/tools/Tool.vue";
+import ToolTemplate from "../../../src/modules/tools/ToolTemplate.vue";
 import {mapGetters, mapMutations} from "vuex";
 import getters from "../store/getters";
 import mutations from "../store/mutations";
 import GeoTIFF from 'ol/source/GeoTIFF';
 import TileLayer from 'ol/layer/WebGLTile';
+import mapCollection from "../../../src/core/maps/mapCollection.js";
 
 export default {
     name: "CogImporter",
@@ -146,13 +149,12 @@ export default {
                 style: this.makeStyle(this.cogSelected),
                 source: source
             });
-            const map = this.$store.getters['Map/ol2DMap'];
-            // map.setView(source.getView());
+            const map = mapCollection.getMap("2D");
             map.addLayer(layer);
         },
 
         removeLayer () {
-            const map = this.$store.getters['Map/ol2DMap'];
+            const map = mapCollection.getMap("2D");
             const cogLayer = map.getAllLayers().find(layer => layer.get("name") === "COG");
 
             if (cogLayer) {
@@ -169,7 +171,7 @@ export default {
 <template lang="html">
     <ToolTemplate
         :title="$t(`additional:modules.tools.cogImporter.title`)"
-        :icon="glyphicon"
+        :icon="icon"
         :active="active"
         :render-to-window="renderToWindow"
         :resizable-window="resizableWindow"

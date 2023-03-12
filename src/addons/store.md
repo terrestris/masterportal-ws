@@ -10,16 +10,18 @@ Bei komplexen Anwendungen ist es sehr hilfreich einen zentralen Store zu haben, 
 
 {% label %}index.js{% endlabel %}
 ```js
+import GenericTool from "../../../src/modules/tools/indexTools";
+import composeModules from "../../../src/app-store/utils/composeModules";
 import getters from "./getters";
 import mutations from "./mutations";
 import state from "./state";
 
-export default {
+export default composeModules([GenericTool, {
     namespaced: true,
-    state: {...state},
+    state,
     mutations,
     getters
-};
+}]);
 ```
 
 - Legen Sie die folgenden Dateien an:
@@ -33,26 +35,22 @@ Zunächst den State des Addons:
  * @typedef {Object} cogImporterState
  * @property {Boolean} active if true, CogImporter will be rendered
  * @property {String} id id of the CogImporter component
- * @property {String} glyphicon icon next to title (config-param)
+ * @property {String} icon icon next to title (config-param)
  * @property {Boolean} renderToWindow if true, tool is rendered in a window, else in sidebar (config-param)
  * @property {Boolean} resizableWindow if true, window is resizable (config-param)
  * @property {Boolean} isVisibleInMenu if true, tool is selectable in menu (config-param)
  * @property {Boolean} deactivateGFI flag if tool should deactivate gfi (config-param)
- * @property {string} cogList List of avaiable COG
- * @property {string} cogSelected Selected COG
  */
 const state = {
     active: false,
     id: "cogImporter",
     // defaults for config.json parameters
     name: "translate#additional:modules.tools.cogImporter.title",
-    glyphicon: "glyphicon-wrench",
+    icon: "bi-wrench",
     renderToWindow: true,
     resizableWindow: true,
     isVisibleInMenu: true,
-    deactivateGFI: true,
-    cogList: undefined,
-    cogSelected: undefined
+    deactivateGFI: true
 };
 
 export default state;
