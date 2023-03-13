@@ -15,7 +15,7 @@
     * [Layer](exercises/layer.md)
     * [Suche](exercises/tools.md)
     * [Suche](exercises/search.md)
-    * [Built](exercises/build.md)
+    * [Build](exercises/build.md)
 * [Erweiterte Konfiguration](customConfig/README.md)
 * [Addons](addons/README.md)
     * [Store](addons/store.md)
