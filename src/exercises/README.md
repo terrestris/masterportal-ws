@@ -2,7 +2,7 @@
 
 > :exclamation: Startpunkt ist der `basic` Branch in der Entwicklungsumgebung:  
 
-Im Masterportal Folder (cloned Bitbucket-Repository) muss vorher ein `npm i` ausgeführt wurden sein.
+Im Masterportal Folder (cloned Bitbucket-Repository) muss vorher ein `npm i` ausgeführt worden sein.
 Dann wird das Entwicklungssetup gestartet per `npm run start`.
 Das Starten dauert einige Zeit, es werden einige Warnings angezeigt, die aber getrost ignoriert werden können.  
 Sobald der Log `Compiled successfully` erscheint, kann losgelegt werden.
