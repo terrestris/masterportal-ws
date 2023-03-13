@@ -19,7 +19,7 @@ Falls `node` nicht installiert ist, oder die Version <`16.13.2` oder >`16.18.1` 
 2. Installieren Sie alle benötigten Abhängigkeiten des Masterportals-Projekts: `npm i`.
 3. Starten Sie anschließend den Entwicklungsserver: `npm run start`.
 4. Nun wird der Masterportal-Quellcode kompiliert und `webpack` erstellt den *dev build*, der anschließend - sobald die Nachricht `Compiled successfully` im Terminal erscheint, im Browser unter der Adresse `localhost:9001/portal/basic` aufgerufen werden kann.
-5. Möglicherweise tauchen viele Logs mit der Nachricht `ENOSPC: System limit for number of file watchers reached` auf. In diesem Fall `Strg+C` drücken um den Dev-Server zu stoppen. Dann `echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p` ausführen und anschließend den Dev-Server wieer starten mit `npm run start`.
+5. Möglicherweise tauchen viele Logs mit der Nachricht `ENOSPC: System limit for number of file watchers reached` auf. In diesem Fall `Strg+C` drücken um den Dev-Server zu stoppen. Dann `echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p` ausführen und anschließend den Dev-Server wieder starten mit `npm run start`.
    
 
 ![Startansicht des Portals basic.](../assets/mp_startview.png)
