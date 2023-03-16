@@ -6,7 +6,7 @@ Es empfiehlt sich, die  [Vue.js devtools](https://github.com/vuejs/devtools) zu 
 
 Im Rahmen dieses Workshops soll ein kleines Addon entwickelt werden, das mit der `OpenLayers` Karte des Masterportals interagiert und dieser ein [Cloud Optimized GeoTIFF](https://www.cogeo.org/) hinzufügt.
 
-Die folgenden Schritte basieren auf im wesentlichen auf den folgenden Beispielen:
+Die folgenden Schritte basieren im wesentlichen auf den folgenden Beispielen:
 
 * [Masterportal VueAddon](https://bitbucket.org/geowerkstatt-hamburg/masterportal/src/a84def2884cd4573b8c0bfdeeb4fc0ec76d2fe72/doc/addOnsVue.md)
 * [Cloud Optimized GeoTIFF (COG)](https://openlayers.org/en/latest/examples/cog.html)

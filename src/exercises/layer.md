@@ -9,7 +9,7 @@
 
 <!--sec data-title="Hint" data-id="section4hint" data-show=true  data-collapse=true ces-->
 
-Schauen Sie sich eine existierende WMS-Konfiguration an. Zum Beispiel die ID 452 (Digitale Orthophotos (belaubt) Hamburg). Kopieren Sie diesen Block und Ändern Sie die ensprechenden Parameter. Einige können zunächst ausgelassen werden, z.B. `Dataset` (für Metadaten).  
+Schauen Sie sich eine existierende WMS-Konfiguration an. Zum Beispiel die ID 452 (Digitale Orthophotos (belaubt) Hamburg). Kopieren Sie diesen Block und ändern Sie die ensprechenden Parameter. Einige können zunächst ausgelassen werden, z.B. `Dataset` (für Metadaten).  
 Ferner kann die Dokumentation der [services.json](https://bitbucket.org/geowerkstatt-hamburg/masterportal/src/v2.17.1/doc/services.json.md) hinzugezogen werden.
 
 <!--endsec-->
