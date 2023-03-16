@@ -56,7 +56,7 @@ Eintrag in der `config.json`
 
 <!--sec data-title="Hint" data-id="section5hint" data-show=true  data-collapse=true ces-->
 
-Werfen Sie einen erneuten Blick in die [services.json](https://bitbucket.org/geowerkstatt-hamburg/masterportal/src/v2.30.0/doc/services.json.md) Dokumentation. Es werden für den WMTS Layertyp zwei Beispiele genannt.
+Werfen Sie einen erneuten Blick in die [services.json](https://bitbucket.org/geowerkstatt-hamburg/masterportal/src/v2.31.0/doc/services.json.md) Dokumentation. Es werden für den WMTS Layertyp zwei Beispiele genannt.
 
 <!--endsec-->
 

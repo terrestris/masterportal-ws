@@ -8,7 +8,10 @@
 
 ### Was passiert hier?
 
-- JS-Code wird transpiliert und kompiliert
+- JS-Code wird transpiliert
+-  Code wird paketiert
+   -  Optimierung für Nutzung im Browser
+   -  einfache Verteilung
 - `bundle` des Quell-Codes und der `assets` (z.B. Grafiken, CSS, Übersetungsdateien)
 
 Schauen Sie danach on den Ordner `dist/masterportalCode/2_30_0`.  
