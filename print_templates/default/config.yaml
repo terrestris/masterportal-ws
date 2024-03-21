@@ -44,3 +44,43 @@ templates:
         inputMapper:
           northArrowDef: northArrow
       - !createScalebar {}
+  A4 Hochformat: !template
+      reportTemplate: a4_portrait.jrxml
+      attributes:
+        title: !string
+          default: "Countries"
+        map: !map
+          maxDpi: 400
+          width: 539
+          height: 786
+          zoomLevels: !zoomLevels
+            scales: [250, 500, 1000, 2500, 5000, 10000, 25000, 50000, 100000]
+        northArrowDef: !northArrow
+          size: 25
+          default:
+            backgroundColor: "rgba(214, 214, 214, 0)"
+        scalebar: !scalebar
+          width: 195
+          height: 20
+          createSubReport: true
+          default:
+            backgroundColor: "rgba(214, 214, 214, 0)"
+            align: "center"
+            barBgColor: "rgba(255, 255, 255, 255)"
+            fontSize: 7
+            barSize: 3
+            color: "rgba(0, 0, 0, 255)"
+            geodetic: false
+            intervals: 4
+            lineWidth: 1
+            unit: "m"
+        showLegend: !boolean {}
+        legend: !jsonDatasource {}
+      processors:
+        - !reportBuilder
+          directory: "."
+        - !createMap {}
+        - !createNorthArrow
+          inputMapper:
+            northArrowDef: northArrow
+        - !createScalebar {}
