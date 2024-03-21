@@ -3,7 +3,7 @@
 <html lang="de">
     <head>
         <meta charset="UTF-8">
-        <title>Basiswissen NPM &#xB7; Mastering the Masterportal</title>
+        <title>Neue Features &#xB7; Mastering the Masterportal</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content>
         <meta name="generator" content="HonKit 3.7.1">
@@ -84,10 +84,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../news/">
+    <link rel="next" href="../devsetup/">
     
     
-    <link rel="prev" href="./">
+    <link rel="prev" href="../basics/npm.html">
     
 
     </head>
@@ -142,9 +142,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="./">
+        <li class="chapter " data-level="1.3" data-path="../basics/">
             
-                <a href="./">
+                <a href="../basics/">
             
                     
                     Basiswissen und Ressourcen
@@ -156,9 +156,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.3.1" data-path="npm.html">
+        <li class="chapter " data-level="1.3.1" data-path="../basics/npm.html">
             
-                <a href="npm.html">
+                <a href="../basics/npm.html">
             
                     
                     Basiswissen NPM
@@ -174,9 +174,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="../news/">
+        <li class="chapter active" data-level="1.4" data-path="./">
             
-                <a href="../news/">
+                <a href="./">
             
                     
                     Neue Features
@@ -488,7 +488,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="..">Basiswissen NPM</a>
+        <a href="..">Neue Features</a>
     </h1>
 </div>
 
@@ -503,62 +503,35 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="npm">npm</h1>
-<p><a href="http://npmjs.com" target="_blank">npm</a> ist der Paketmanager f&#xFC;r Node.js (eine JavaScript-Laufzeitumgebung) und die weltweit gr&#xF6;&#xDF;te Software-Registry (mehr als 600k Pakete) mit ca. 3 Milliarden Downloads pro Woche.</p>
-<figure id="fig1.3.1.1"><img src="../assets/npm_logo.png" alt="npm Logo"><figcaption>npm Logo</figcaption></figure>
-<p>npm kann genutzt werden, um ...</p>
+                                <h1 id="neue-features-&#x1F4DC;-&#x1F4E2;">Neue Features &#x1F4DC; &#x1F4E2;</h1>
+<p>Im Changelog werden detailiert s&#xE4;mtliche &#xC4;nderungen neuer Releases gelistet. Es werden kontinuierlich Bugfixes und Sicherheitspatches bereitgstellt, zudem kommen neue Features hinzu.</p>
+<p><a href="https://bitbucket.org/geowerkstatt-hamburg/masterportal/src/dev/CHANGELOG.md" target="_blank">Link zum Changelog</a></p>
+<h2 id="neue-features-der-letzten-releases-&#x1F514;">Neue Features der letzten Releases &#x1F514;</h2>
 <ul>
-<li><p>Pakete an Anwendungen anpassen oder diese so einbinden, wie sie sind.</p>
-</li>
-<li><p>Eigenst&#xE4;ndige Tools herunterladen.</p>
-</li>
-<li><p>Pakete ohne Herunterladen mit npx ausf&#xFC;hren.</p>
-</li>
-<li><p>Code mit jedem npm-User teilen, &#xFC;berall.</p>
-</li>
-<li><p>Code f&#xFC;r bestimmte Entwickler beschr&#xE4;nken.</p>
-</li>
-<li><p>Virtuelle Teams (orgs) bilden.</p>
-</li>
-<li><p>Mehrere Versionen von Code und Code-Abh&#xE4;ngigkeiten verwalten.</p>
-</li>
-<li><p>Anwendungen einfach aktualisieren, wenn der zugrunde liegende Code aktualisiert wird.</p>
-</li>
-<li><p>Andere Entwickler finden, die an &#xE4;hnlichen Problemen arbeiten.</p>
-</li>
+<li>Print: An option &quot;Improve scaling resolution&quot; is implemented for 3d Layers to supply an improved and better resolution.</li>
+<li>Added translations for Sensor Theme.</li>
+<li>Added square as geometryType for drawingTool.</li>
+<li>New Parameter sldVersion for legend configuration to define a Styled Layer Descriptor for the GetLegendGraphic requests.</li>
+<li>possibility to keep more than one tool open at the same time</li>
+<li>Add additional wfs and wms layer param &apos;gfiThemeSettings&apos; to provide the possibility of additional gfiTheme settings.</li>
+<li>New Tool 3D-Modeler has been added to draw/import 3D models into the 3D map.</li>
+<li>WebGL render pipeline supports now also VectorTile layers.</li>
+<li>Printing is now for 3d supported.</li>
+<li>dded new module login button that allows the user to login with an OIDC IDM. The resulting auth token is added to all service requests (can be configured).</li>
+<li>urls in gfiAttributes can now be custimized and shown as html tags (e.g. a, img, iframe) with custom properties</li>
 </ul>
-<h3 id="packagejson">package.json</h3>
-<p>Der Befehl <code>npm init</code> in Ihrem Projektordner &#xF6;ffnet einen interaktiven Dialog zur Erstellung eines npm-Projekts. Das Ergebnis ist die <code>package.json</code> mit allen wichtigen Einstellungen, Skripten und Abh&#xE4;ngigkeiten Ihres Projekts.</p>
-<pre><code>{
-  &quot;name&quot;: &quot;name_of_your_package&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;description&quot;: &quot;This is just a test&quot;,
-  &quot;main&quot;: &quot;index.js&quot;,
-  &quot;scripts&quot;: {
-    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;
-  },
-  &quot;repository&quot;: {
-    &quot;type&quot;: &quot;git&quot;,
-    &quot;url&quot;: &quot;http://github.com/yourname/name_of_your_package.git&quot;
-  },
-  &quot;author&quot;: &quot;your_name&quot;,
-  &quot;license&quot;: &quot;ISC&quot;
-}
-</code></pre><p>Weitere Infos hier: <a href="https://docs.npmjs.com/cli/v9/configuring-npm/package-json" target="_blank">npm docs package.json</a>.</p>
-<h3 id="installieren-von-packages-mittels-npm">Installieren von packages mittels npm</h3>
-<p>Der einfachste Weg, neue Pakete zu intallieren, ist die Nutzung der <a href="https://docs.npmjs.com/cli/npm" target="_blank">CLI</a>:</p>
-<p><code>npm install packagename</code></p>
-<p>Das installierte Paket ist anschlie&#xDF;end im Subfolder <code>node_modules</code> zu finden.</p>
-<h1 id="node-version-manager-nvm">Node version manager NVM</h1>
+<h2 id="beispiel-f&#xFC;r-einen-breaking-change">Beispiel f&#xFC;r einen Breaking Change</h2>
 <ul>
-<li>bash script um mehrere node Versionen zu verwalten</li>
-<li>Siehe <a href="https://github.com/creationix/nvm" target="_blank">hier</a></li>
+<li><strong>v2.34.0</strong>  The Virtual City Planner tool (virtualcityPLANNER) has been removed</li>
 </ul>
-<pre><code>wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
-nvm i v8
-</code></pre><footer class="page-footer">FOSSGIS 2023<span class="footer-modification">Last modified: 
+<h2 id="roadmap">Roadmap</h2>
+<ul>
+<li>Es wird derzeit viel am 3.0.0 Release gearbeitet. Erste stabile Version Mitte 2024</li>
+<li>Support und Bugfixes bis Ende 2024<footer class="page-footer">FOSSGIS 2023<span class="footer-modification">Last modified: 
 2024-03-21 10:44:10
-</span></footer>
+</span></footer></li>
+</ul>
+
                                 
                                 </section>
                             
@@ -585,12 +558,12 @@ nvm i v8
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Basiswissen und Ressourcen">
+                <a href="../basics/npm.html" class="navigation navigation-prev " aria-label="Previous page: Basiswissen NPM">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../news/" class="navigation navigation-next " aria-label="Next page: Neue Features">
+                <a href="../devsetup/" class="navigation navigation-next " aria-label="Next page: Entwicklungssetup">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -601,7 +574,7 @@ nvm i v8
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Basiswissen NPM","level":"1.3.1","depth":2,"next":{"title":"Neue Features","level":"1.4","depth":1,"path":"news/README.md","ref":"news/README.md","articles":[]},"previous":{"title":"Basiswissen und Ressourcen","level":"1.3","depth":1,"path":"basics/README.md","ref":"basics/README.md","articles":[{"title":"Basiswissen NPM","level":"1.3.1","depth":2,"path":"basics/npm.md","ref":"basics/npm.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["advanced-emoji","image-captions","pagefooter","richquotes@0.0.9","codeblock-label","sectionx-ex","logo"],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"pagefooter":{},"logo":{"rootStyle":"text-align: center; padding: 10px;","logo":"https://www.masterportal.org/files/cto_layout/themedesigner/uploads/LGV_Masterportal_logo_quer_rgb_RZ.png","url":"https://www.masterportal.org","logoStyle":"width: 150px;"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"sectionx":{"tag":"b"},"highlight":{},"page-footer":{"footer":"FOSSGIS 2023","label":"Last modified: ","format":"YYYY-MM-DD HH:mm:ss","utc":true},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":"_CAPTION_","variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"workshopName":"Mastering the Masterportal introduction","osGeoLiveVersion":"16.0","authors":[{"name":"Hannes Blitza","mail":"blitza@terrestris.de"}],"_pictures":[{"backlink":"index.html#fig1.1.1","level":"1.1","list_caption":"Figure: Masterportal Logo","alt":"Masterportal Logo","nro":1,"url":"./assets/LGV_Masterportal_quer_rgb.png","index":1,"caption_template":"_CAPTION_","label":"Masterportal Logo","attributes":{},"skip":false,"key":"1.1.1"},{"backlink":"introduction/index.html#fig1.2.1","level":"1.2","list_caption":"Figure: Die Startansicht der OSGeo Live {{ book.osGeoLiveVersion }} auf Ihrem Rechner.","alt":"Die Startansicht der OSGeo Live {{ book.osGeoLiveVersion }} auf Ihrem Rechner.","nro":2,"url":"../assets/startview_osgeo_v15.png","index":1,"caption_template":"_CAPTION_","label":"Die Startansicht der OSGeo Live {{ book.osGeoLiveVersion }} auf Ihrem Rechner.","attributes":{},"skip":false,"key":"1.2.1"},{"backlink":"basics/npm.html#fig1.3.1.1","level":"1.3.1","list_caption":"Figure: npm Logo","alt":"npm Logo","nro":3,"url":"../assets/npm_logo.png","index":1,"caption_template":"_CAPTION_","label":"npm Logo","attributes":{},"skip":false,"key":"1.3.1.1"},{"backlink":"devsetup/index.html#fig1.5.1","level":"1.5","list_caption":"Figure: Startansicht des Portals basic.","alt":"Startansicht des Portals basic.","nro":4,"url":"../assets/mp_startview.png","index":1,"caption_template":"_CAPTION_","label":"Startansicht des Portals basic.","attributes":{},"skip":false,"key":"1.5.1"},{"backlink":"mpadmin/index.html#fig1.8.1","level":"1.8","list_caption":"Figure: MP Admin","alt":"MP Admin","nro":5,"url":"../assets//screenshot-masterportal-admin-01.jpeg","index":1,"caption_template":"_CAPTION_","label":"MP Admin","attributes":{},"skip":false,"key":"1.8.1"}]},"title":"Mastering the Masterportal","language":"de","gitbook":"*","description":"Masterportal workshop FOSSGIS 2023"},"file":{"path":"basics/npm.md","mtime":"2024-03-21T10:44:10.673Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2024-03-21T10:45:33.469Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Neue Features","level":"1.4","depth":1,"next":{"title":"Entwicklungssetup","level":"1.5","depth":1,"path":"devsetup/README.md","ref":"devsetup/README.md","articles":[]},"previous":{"title":"Basiswissen NPM","level":"1.3.1","depth":2,"path":"basics/npm.md","ref":"basics/npm.md","articles":[]},"dir":"ltr"},"config":{"plugins":["advanced-emoji","image-captions","pagefooter","richquotes@0.0.9","codeblock-label","sectionx-ex","logo"],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"pagefooter":{},"logo":{"rootStyle":"text-align: center; padding: 10px;","logo":"https://www.masterportal.org/files/cto_layout/themedesigner/uploads/LGV_Masterportal_logo_quer_rgb_RZ.png","url":"https://www.masterportal.org","logoStyle":"width: 150px;"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"sectionx":{"tag":"b"},"highlight":{},"page-footer":{"footer":"FOSSGIS 2023","label":"Last modified: ","format":"YYYY-MM-DD HH:mm:ss","utc":true},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":"_CAPTION_","variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"workshopName":"Mastering the Masterportal introduction","osGeoLiveVersion":"16.0","authors":[{"name":"Hannes Blitza","mail":"blitza@terrestris.de"}],"_pictures":[{"backlink":"index.html#fig1.1.1","level":"1.1","list_caption":"Figure: Masterportal Logo","alt":"Masterportal Logo","nro":1,"url":"./assets/LGV_Masterportal_quer_rgb.png","index":1,"caption_template":"_CAPTION_","label":"Masterportal Logo","attributes":{},"skip":false,"key":"1.1.1"},{"backlink":"introduction/index.html#fig1.2.1","level":"1.2","list_caption":"Figure: Die Startansicht der OSGeo Live {{ book.osGeoLiveVersion }} auf Ihrem Rechner.","alt":"Die Startansicht der OSGeo Live {{ book.osGeoLiveVersion }} auf Ihrem Rechner.","nro":2,"url":"../assets/startview_osgeo_v15.png","index":1,"caption_template":"_CAPTION_","label":"Die Startansicht der OSGeo Live {{ book.osGeoLiveVersion }} auf Ihrem Rechner.","attributes":{},"skip":false,"key":"1.2.1"},{"backlink":"basics/npm.html#fig1.3.1.1","level":"1.3.1","list_caption":"Figure: npm Logo","alt":"npm Logo","nro":3,"url":"../assets/npm_logo.png","index":1,"caption_template":"_CAPTION_","label":"npm Logo","attributes":{},"skip":false,"key":"1.3.1.1"},{"backlink":"devsetup/index.html#fig1.5.1","level":"1.5","list_caption":"Figure: Startansicht des Portals basic.","alt":"Startansicht des Portals basic.","nro":4,"url":"../assets/mp_startview.png","index":1,"caption_template":"_CAPTION_","label":"Startansicht des Portals basic.","attributes":{},"skip":false,"key":"1.5.1"},{"backlink":"mpadmin/index.html#fig1.8.1","level":"1.8","list_caption":"Figure: MP Admin","alt":"MP Admin","nro":5,"url":"../assets//screenshot-masterportal-admin-01.jpeg","index":1,"caption_template":"_CAPTION_","label":"MP Admin","attributes":{},"skip":false,"key":"1.8.1"}]},"title":"Mastering the Masterportal","language":"de","gitbook":"*","description":"Masterportal workshop FOSSGIS 2023"},"file":{"path":"news/README.md","mtime":"2024-03-21T10:44:10.673Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2024-03-21T10:45:33.469Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
