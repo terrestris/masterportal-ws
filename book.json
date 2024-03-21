@@ -5,7 +5,7 @@
   "root": "./src",
   "variables": {
     "workshopName": "Mastering the Masterportal introduction",
-    "osGeoLiveVersion": "15.0",
+    "osGeoLiveVersion": "16.0",
     "authors": [
       {
         "name": "Hannes Blitza",

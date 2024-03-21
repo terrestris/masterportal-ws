@@ -37,4 +37,3 @@ Neben den Partnern aus der öffentlichen Verwaltung gibt es verschiedene Unterne
 # Zuarbeit
 
 - LGV HH, u.a. Dirk Rohrmoser ([dirk.rohrmoser@gv.hamburg.de](mailto::dirk.rohrmoser@gv.hamburg.de))
-- Marc Jansen (COG Example) ([jansen@terrestris.de](mailto:jansen@terrestris.de))
