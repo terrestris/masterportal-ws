@@ -84,11 +84,3 @@ Der MapMarker beim GFI ist schön und hat einen hohen Wiedererkennungswert. Trot
   ```
 3. Weisen Sie in der `config.js` dem Property `pointStyleId` den neuen Stil `custom-point` zu.
 4. Hier muss das Dev-Setup ggf. neugestartet werden (Strg+C, dann erneut `npm run start`), um den Effekt zu sehen.
-
-
-## 3. UseCase
-
-Ich hab auf der FOSSGIS 2022 in einigen Vorträgen vom `Cloud-Optimized-GeoTIFF` gehört und finde es interessant.  
-Nun habe ich gesehen, dass [OpenLayers bereits mit dem Format umgehen kann](https://openlayers.org/en/latest/examples/cog.html). Wie bekomme ich das in mein Masterportal? :eyes:  
-
-:fire: Über ein Addon..
