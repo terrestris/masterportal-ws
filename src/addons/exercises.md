@@ -32,11 +32,30 @@
 
 **Aufgabe 4:** Konfigurieren Sie einen Layer, der das custom GFI Addon verwendet:
 
+📣  Für den DWD Geoserver muss zunächst ein Proxy eingerichtet werden:
+
+- Erstellen sie eine `proxyconf.json` im Ordner `devsetup` mit folgenden Inhalt:
+
+```
+{
+    "/dwd": {
+        "target": "https://cdc.dwd.de/geoserver",
+        "changeOrigin": true,
+        "pathRewrite": {
+            "^/dwd": ""
+          }
+    }
+}
+```
+- Starten Sie den lokalen Dev-Server des Masterportals neu!  
+
+- Anschließend kann der folgende Layer definiert werden werden:
+
 ```
   {
     "id": "obs_deu_p1m_t2m",
     "name": "OBS",
-    "url": "https://cdc.dwd.de/geoserver",
+    "url": "https://localhost:9001/dwd/ows",
     "layers": "OBS_DEU_P1M_T2M",
     "typ": "WMS",
     "format": "image/png",
@@ -53,8 +72,8 @@
       "name": "simpleLineChart",
       "params": {
         "wfs": {
-          "url": "https://cdc.dwd.de/geoserver",
-          "featureType": "OBS_DEU_P1M_T2M",
+          "url": "https://localhost:9001/dwd/ows",
+          "featureType": "CDC:OBS_DEU_P1M_T2M",
           "attributes": {
             "timestamp": "ZEITSTEMPEL",
             "value": "WERT"

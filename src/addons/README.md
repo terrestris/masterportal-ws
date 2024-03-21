@@ -8,3 +8,4 @@ Im Rahmen dieses Workshops soll exemplarisch ein custom GFITheme Addon eingebund
 
 Addon-Code: https://github.com/terrestris/masterportal-addons/tree/main/simpleLineChart
 
+![npm Logo](../assets/chart.png)
