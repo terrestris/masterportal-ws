@@ -6,14 +6,14 @@
 
 **Aufgabe 3:** Editieren Sie das Druck-Template, so dass das Logo ihrer Institution / Firma angezeigt wird.
 
-**🍰 Bonus Aufgabe 4:**  Konfigurieren Sie einen Filter, sodass nur ein einziges Layout für das Format PDF im Druck-Tool des Masterportals erscheint.
+**🍰 Bonus Aufgabe 4:** Konfigurieren Sie einen Filter, sodass nur ein einziges Layout für das Format PDF im Druck-Tool des Masterportals erscheint.
 
 <!--sec data-title="Hint" data-id="section4hint" data-show=true  data-collapse=true ces-->
 
 ```json
 {
     "capabilitiesFilter": {
-        "layouts": ["A4 Hochformat"],
+        "layouts": ["A4 Querformat"],
         "outputFormats": ["PDF"]
     }
 }
