@@ -1,6 +1,6 @@
 {
   "title": "Mastering the Masterportal",
-  "description": "Masterportal workshop FOSSGIS 2023",
+  "description": "Masterportal workshop FOSSGIS 2024",
   "language": "de",
   "root": "./src",
   "variables": {
@@ -33,7 +33,7 @@
       "caption": "_CAPTION_"
     },
     "page-footer": {
-      "footer": "FOSSGIS 2023",
+      "footer": "FOSSGIS 2024",
       "label": "Last modified: ",
       "format": "YYYY-MM-DD HH:mm:ss",
       "utc": true
