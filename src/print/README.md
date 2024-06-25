@@ -24,8 +24,10 @@ Im Masterportal können [MapFish Print](https://mapfish.github.io/mapfish-print-
 
 **Voraussetzung:** Print Templates
 
-**Quickstart:**  
-`docker run --rm --name "mapfish-print" -p 8080:8080 -v `pwd`/print_templates/default:/usr/local/tomcat/webapps/ROOT/print-apps/ camptocamp/mapfish_print:3.30`
+**Quickstart:** 
+```
+docker run --rm --name "mapfish-print" -p 8080:8080 -v `pwd`/print_templates/default:/usr/local/tomcat/webapps/ROOT/print-apps/ camptocamp/mapfish_print:3.30
+```
 
 **Erläuterung des Befehls:**  
 

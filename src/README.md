@@ -24,7 +24,6 @@ Neben den Partnern aus der öffentlichen Verwaltung gibt es verschiedene Unterne
 ## Zentrale Links:
 
 * [Website](https://www.masterportal.org/)
-* [Twitter](https://twitter.com/masterportalorg)
 * [Code](https://bitbucket.org/geowerkstatt-hamburg/masterportal/)
 
 

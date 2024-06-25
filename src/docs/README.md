@@ -11,6 +11,6 @@ Die Dokumentation für die Administration und Konfiguration des Masterportals is
 
 ## Alternativen
 
-- https://www.masterportal.org/dokumentation.html
+- https://www.masterportal.org/dokumentation
 - https://bitbucket.org/geowerkstatt-hamburg/masterportal/src/latest/
 - Oder mit einem Editor (z.B. Visual Studio Code) die Markdowns rendern (Strg+Shift+v)

@@ -25,7 +25,7 @@
   "pluginsConfig": {
     "logo": {
       "rootStyle": "text-align: center; padding: 10px;",
-      "logo": "https://www.masterportal.org/files/cto_layout/themedesigner/uploads/LGV_Masterportal_logo_quer_rgb_RZ.png",
+      "logo": "assets/LGV_Masterportal_quer_rgb.png",
       "url": "https://www.masterportal.org",
       "logoStyle": "width: 150px;"
     },

@@ -15,4 +15,4 @@ Dieser Teil dient eher als Nachschlagewerk, es kann direkt losgelegt werden mit 
 - https://geoportal.muenchen.de/portal/master/
 - https://geoportal.brandenburg.de/de/cms/portal/start
 
-Weitere Geoportale: https://www.masterportal.org/referenzen.html
+Weitere Geoportale: https://www.masterportal.org/referenzen
