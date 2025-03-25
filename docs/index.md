@@ -4,8 +4,7 @@ id: start
 sidebar_position: 1
 ---
 
-
-<img src="/img/LGV_Masterportal_quer_rgb.png" alt="Masterportal Logo" width="700px" />
+![Masterportal Logo](/img/LGV_Masterportal_quer_rgb.png)
 
 # Hands on Masterportal
 
