@@ -1,10 +1,12 @@
-# Konfiguration der Suche
+# Konfiguration der Suche 🔍
 
 Es lassen sich verschiedene [SearchInterfaces](https://www.masterportal.org/mkdocs/doc/Latest/User/Portal-Config/config.json/#portalconfigmenusearchbarsearchinterfaces) anbinden, diese lassen sich beliebig konfigurieren!  
 
-Sinnvoll ist in den meisten Fällen:
+Sinnvoll ist häufig:
   - `visibleVector`
   - `topicTree`
+  - `komoot` / `nominatim`
+  - `specialWfs`
 
 **Aufgabe 1:** Es sollen alle sichtbaren Vektorlayer durchsucht werden können. Man soll die Krankenhäuser in Münster anhand des Namens (Attribut: `NAME`) durchsuchen können.
 
@@ -66,3 +68,23 @@ Anschließend muss in der `config.json` im Block `searchbar` folgender Block def
 Schauen Sie in der `config.json.md` im Abschnitt `Portalconfig.searchBar.komoot` nach Filterung für OSM Tags. Weiter Infos: https://github.com/komoot/photon.
 
 </detail>
+
+
+## Weitere SearchInterfaces / Such Tools
+
+### WFS Search
+
+- eigenständiges Tool, z.B. sinnvoll für Flurstücksuchen
+- WFS 2.0: `storedQuery`. [Hilfreiche Informationen](https://www.weichand.de/2011/11/30/wfs-2-0-abfragen-queries/)
+- siehe Rechtes Menü auf https://geoportal.meckenheim.de
+
+### ElasticSearch
+
+- Backend notwendig
+- Sehr performante **indizierte** Suche
+- Anwendungsfälle: Mehrere Suchtöpfe, deren Ergebnisse zeitgleich kommen sollen (Scoring möglich)
+
+### SpecialWFS
+
+- WFS Suche mit der zentralen Searchbar (kein eigenständiges Tool)
+- Vorteil: Der zu durchsuchende Layer muss nicht im Layerbaum sein
