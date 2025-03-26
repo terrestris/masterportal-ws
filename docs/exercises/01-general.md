@@ -106,4 +106,86 @@ Schauen Sie in der `style_v3.json` nach einem Stil der den Begriff `krankenhaus`
   },
 ```
 
+Falls der Stil nicht in der `style_v3.json` zu finden ist:
+
+```json
+  {
+    "styleId": "1711",
+    "rules": [
+      {
+        "style": {
+          "type": "icon",
+          "clusterType": "icon",
+          "imageName": "krankenhaus.png",
+          "imageScale": 0.7,
+          "clusterImageName": "krankenhaus.png",
+          "clusterTextOffsetX": 30,
+          "clusterTextOffsetY": 0,
+          "clusterTextFillColor": [
+            0,
+            0,
+            255,
+            1
+          ]
+        }
+      }
+    ]
+  }
+```
+
 </details>
+
+**Bonus:** 🎁
+
+Erstellen Sie eine Konfiguration für den das Tool LayerSlider, um verschiedene Zeitpunkte direkt miteinander zu vergleichen.
+
+<details>
+
+<summary>Lösung</summary>
+
+**Konfiguration der Layer:**
+
+```json
+{
+  "id": "sentinel2-time-2018",
+  "name": "Sentinel-2 Mosaik 2018",
+  "url": "https://sgx.geodatenzentrum.de/wms_sentinel2_de?time=2018",
+  "typ": "WMS",
+  "layers": "rgb",
+  "version": "1.1.0",
+  "tilesize": 512
+},
+{
+  "id": "sentinel2-time-2019",
+  "name": "Sentinel-2 Mosaik 2019",
+  "url": "https://sgx.geodatenzentrum.de/wms_sentinel2_de?time=2019",
+  "typ": "WMS",
+  "layers": "rgb",
+  "version": "1.1.0",
+  "tilesize": 512
+}
+```
+
+**Konfiguration des Tools:**
+
+```json
+{
+    "type": "layerSlider",
+    "icon": "bi-hourglass-split",
+    "timeInterval": 2000,
+    "layerIds": [
+        {
+            "title": "2018",
+            "layerId": "sentinel2-time-2018"
+        },
+        {
+            "title": "2019",
+            "layerId": "sentinel2-time-2019"
+        }
+    ]
+}
+```
+
+</details>
+
+🎁🎁 Fügen Sie weitere Zeitpunkte hinzu! DOP oder Sentinel-2 Quellen.

@@ -11,7 +11,7 @@ Hier werden sämtliche Konfigurationen vorgenommen, die nicht direkt auf UI-Elem
 - Footer
 - mousehover
 
-[Link zur vollständigen Dokumentation](https://www.masterportal.org/mkdocs/doc/v3.3.2/User/Portal-Config/config.js/)
+[Link zur vollständigen Dokumentation](https://www.masterportal.org/mkdocs/doc/v3.8.0/User/Portal-Config/config.js/)
 
 **Beispiel-Konfiguration:**
 
@@ -542,4 +542,4 @@ Ein Minimal-Beispiel:
 }
 ```
 
-[Link zur vollständigen Dokumentation](https://www.masterportal.org/mkdocs/doc/v3.3.2/User/Portal-Config/config.json/)
+[Link zur vollständigen Dokumentation](https://www.masterportal.org/mkdocs/doc/v3.8.0/User/Portal-Config/config.json/)

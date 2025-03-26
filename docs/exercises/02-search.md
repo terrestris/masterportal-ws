@@ -31,7 +31,7 @@ Result Events: https://www.masterportal.org/mkdocs/doc/Latest/User/Portal-Config
 
 **Aufgabe 3:** Es soll eine Konfiguration für ein Gazeetteer erstellt werden. Hierfür nutzen wir die [Komoot API](https://photon.komoot.io/), die einen schnellen Zugriff auf OSM Daten ermöglicht.  
 
-Definieren Sie zunächst folgenden Block in der `rest-services-internet.json`.
+Definieren Sie zunächst folgenden Block in der `rest-services-internet.json` (falls nicht bereits vorhanden).
 
 ```json
 {
@@ -87,4 +87,4 @@ Schauen Sie in der `config.json.md` im Abschnitt `Portalconfig.searchBar.komoot`
 ### SpecialWFS
 
 - WFS Suche mit der zentralen Searchbar (kein eigenständiges Tool)
-- Vorteil: Der zu durchsuchende Layer muss nicht im Layerbaum sein
+- Vorteil: Der zu durchsuchende Layer muss nicht im Layerbaum sein.

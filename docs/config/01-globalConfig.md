@@ -78,7 +78,7 @@ Hier muss berücksichtigt werden, dass die Kacheln in der Projektion des ersten 
 dass im Capabilities auftaucht (zumeist EPSG:3857). OpenLayers übernimmt im Client die
 [Reprojektion der Kacheln](https://openlayers.org/en/latest/examples/reprojection.html) in die aktuelle Kartenprojektion.
 
-[Link zur vollständigen Dokumentation](https://www.masterportal.org/mkdocs/doc/v3.3.2/User/Global-Config/services.json/)
+[Link zur vollständigen Dokumentation](https://www.masterportal.org/mkdocs/doc/v3.8.0/User/Global-Config/services.json/)
 
 
 ## rest-services.json
@@ -121,7 +121,7 @@ Hier werden alle Services definiert, die nicht direkt für die visuelle Darstell
 ]
 ```
 
-[Link zur vollständigen Dokumentation](https://www.masterportal.org/mkdocs/doc/v3.3.2/User/Global-Config/rest-services.json/)
+[Link zur vollständigen Dokumentation](https://www.masterportal.org/mkdocs/doc/v3.8.0/User/Global-Config/rest-services.json/)
 
 ## style.json
 
@@ -174,6 +174,6 @@ Einer Stilregel können `conditions` hinzugefügt werden, die letztendlich attri
 },
 ```
 
-[Link zur vollständigen Beschreibung der Conditions](https://www.masterportal.org/mkdocs/doc/v3.3.2/User/Global-Config/style.json/#conditions)
+[Link zur vollständigen Beschreibung der Conditions](https://www.masterportal.org/mkdocs/doc/v3.8.0/User/Global-Config/style.json/#conditions)
 
-[Link zur vollständigen Stil-Dokumentation](https://www.masterportal.org/mkdocs/doc/v3.3.2/User/Global-Config/style.json)
+[Link zur vollständigen Stil-Dokumentation](https://www.masterportal.org/mkdocs/doc/v3.8.0/User/Global-Config/style.json)

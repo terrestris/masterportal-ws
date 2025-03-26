@@ -8,7 +8,7 @@ Die Dokumentation für die Administration und Konfiguration des Masterportals is
 
 ## Markdown nach HTML (docs "bauen")
 
-1. Im Masterportal repo `npm run buildMdDocs` aufrufen.
+1. Im Masterportal repo `npm run buildJsDoc` aufrufen.
 2. Die Markdowns werden dann in den Ordner `docHtml` geschrieben und können bequem in einem Webbrowser betrachtet werden.
 3. `cd docHtml` und `python3 -m http.server` ausführen.
 4. Nun werden die Docs unter http://localhost:8000 ausgeliefert. (z.B. http://localhost:8000/config.json.html)
