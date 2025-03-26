@@ -137,7 +137,7 @@ Falls der Stil nicht in der `style_v3.json` zu finden ist:
 
 **Bonus:** 🎁
 
-Erstellen Sie eine Konfiguration für den das Tool LayerSlider, um verschiedene Zeitpunkte direkt miteinander zu vergleichen.
+Erstellen Sie eine Konfiguration für den das Tool LayerSlider, um verschiedene Zeitpunkte direkt miteinander zu vergleichen. Nehmen Sie hierzu z.B. Layer aus dem BKG [Sentinel-2 Mosaik WMS](https://gdz.bkg.bund.de/index.php/default/webdienste/digitale-orthophotos/wms-deutschlandmosaik-aus-sentinel-2-daten-wms-sentinel2-de.html).
 
 <details>
 
@@ -156,9 +156,9 @@ Erstellen Sie eine Konfiguration für den das Tool LayerSlider, um verschiedene 
   "tilesize": 512
 },
 {
-  "id": "sentinel2-time-2019",
-  "name": "Sentinel-2 Mosaik 2019",
-  "url": "https://sgx.geodatenzentrum.de/wms_sentinel2_de?time=2019",
+  "id": "sentinel2-time-2021",
+  "name": "Sentinel-2 Mosaik 2021",
+  "url": "https://sgx.geodatenzentrum.de/wms_sentinel2_de?time=2021",
   "typ": "WMS",
   "layers": "rgb",
   "version": "1.1.0",
@@ -180,7 +180,7 @@ Erstellen Sie eine Konfiguration für den das Tool LayerSlider, um verschiedene 
         },
         {
             "title": "2019",
-            "layerId": "sentinel2-time-2019"
+            "layerId": "sentinel2-time-2021"
         }
     ]
 }
