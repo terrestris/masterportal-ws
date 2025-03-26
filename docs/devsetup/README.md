@@ -16,8 +16,8 @@ Eine ausführliche Beschreibung dieser Entwicklungstools- und Frameworks würde 
 - Führen Sie `node -v`, um die installierte Version von `node` auszugeben.
 Falls `node` nicht installiert ist, oder die Version < `18.16.0` oder > `20.12.0` ist, folgende Schritte ausführen: 
     - `wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash`
-    - `source ~/.bashrc` Refresh der `.bashrc`. Notwendig, um neues command `nvm` auszuführen
-    - `nvm install v20.12.0`
+    - Terminal Fenster schließen und erneut öffnen.
+    - `nvm install v20.12.2`
     
     
 - Es soll auf der Version `3.8.0` gearbeitet werden, hierzu sind folgend Befehle auszuführen:
