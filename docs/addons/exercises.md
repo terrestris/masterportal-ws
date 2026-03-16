@@ -2,7 +2,7 @@
 
 **Aufgabe 1:** Integrieren Sie das `SimpleLineChart` Addon in ihr Dev-Setup. Der erste Schritt ist der [Download des Addon-Codes](https://github.com/terrestris/masterportal-addons/archive/refs/heads/main.zip). Der Ordner `simpleLineChart` muss in den Ordner `masterportal/addons` kopiert werden.
 
-**Aufgabe 2:** Integrieren Sie das `TourGuide` Addon in ihr Dev-Setup. Hierzu muss der Ordner `tourGuide` aus dem obigen ZIP-File in den Addon Ordner extrahier werden. Starten Sie anschließend das Dev Setup neu, damit die Addons verfügbar sind.
+**Aufgabe 2:** Integrieren Sie das `TourGuide` Addon in ihr Dev-Setup. Hierzu muss der Ordner `tourGuide` aus dem obigen ZIP-File in den Addon Ordner extrahiert werden. Geben Sie dann den Befehl `npm i` im Order `tourGuide` ein. Starten Sie anschließend das Dev Setup neu, damit die Addons verfügbar sind.
 
 **Aufgabe 3:** Registrieren Sie die Addons in der `addonsConf.json`.
 
@@ -91,7 +91,7 @@ addons: ["simpleLineChart", "tourGuide"]
 
 **Aufgabe 5:** Testen Sie das erste Addon, in dem Sie den Layer in der `config.json` referenzieren, im Portal anschalten und einen GFI Request auslösen. Dazu navigieren Sie rund 20km nördlich von Münster. Dort ist eine Messtation.
 
-**Aufgabe 6:** Erstellen Sie eine exemplarische Konfiguration für das `TourGuide` Addon. Dies wird in die `config.js` Ihres Portals integriert (Auf derselben Ebene der anderen Parameter, wie z.B. `language`).
+**Aufgabe 6:** Erstellen Sie eine exemplarische Konfiguration für das `TourGuide` Addon. Dies wird in die `config.js` Ihres Portals integriert (auf derselben Ebene der anderen Parameter, wie z.B. `language`).
 
 ```js
     tourGuide: {

@@ -137,7 +137,7 @@ Falls der Stil nicht in der `style_v3.json` zu finden ist:
 
 **Bonus:** 🎁
 
-Erstellen Sie eine Konfiguration für den das Tool LayerSlider, um verschiedene Zeitpunkte direkt miteinander zu vergleichen. Nehmen Sie hierzu z.B. Layer aus dem BKG [Sentinel-2 Mosaik WMS](https://gdz.bkg.bund.de/index.php/default/webdienste/digitale-orthophotos/wms-deutschlandmosaik-aus-sentinel-2-daten-wms-sentinel2-de.html).
+Erstellen Sie eine Konfiguration für das Tool LayerSlider, um verschiedene Zeitpunkte direkt miteinander zu vergleichen. Nehmen Sie hierzu z.B. Layer aus dem BKG [Sentinel-2 Mosaik WMS](https://gdz.bkg.bund.de/index.php/default/webdienste/digitale-orthophotos/wms-deutschlandmosaik-aus-sentinel-2-daten-wms-sentinel2-de.html).
 
 <details>
 

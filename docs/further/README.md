@@ -5,7 +5,7 @@ title: Weiteres
 
 # Masterportal Admin
 
-Mit dem „Masterportal-Admin“ steht interessierten NuterInnen eine webbasierte Anwendung mit grafischer Benutzeroberfläche zur Verfügung, die es ermöglicht, Konfigurationen für individuelle Geoportale dialoggeführt zu erstellen.
+Mit dem „Masterportal-Admin“ steht interessierten NutzerInnen eine webbasierte Anwendung mit grafischer Benutzeroberfläche zur Verfügung, die es ermöglicht, Konfigurationen für individuelle Geoportale dialoggeführt zu erstellen.
 
 * [Kurzbeschreibung](https://www.masterportal.org/features/masterportal-admin)
 
