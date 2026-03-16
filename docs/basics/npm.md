@@ -57,9 +57,9 @@ Das installierte Paket ist anschließend im Subfolder `node_modules` zu finden.
 
 # Node version manager NVM
 * bash script um mehrere node Versionen zu verwalten
-* Siehe [hier](https://github.com/creationix/nvm)
+* Siehe [hier](https://github.com/nvm-sh/nvm)
 
 ```
-wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
-nvm i v8
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
+nvm i v20
 ```

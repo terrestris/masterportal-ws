@@ -9,7 +9,7 @@ title: Architektur
 - Standardbasiert (OGC Standards, Rest APIs)
 - Modular und konfigurabel
   - 12 Daten-Schnittstellen
-  - > 30 Tools
+  - \> 30 Tools
 - Responsiv
 - Rein clientseitig
 - Gut dokumentiert für NutzerInnen und Devs: `coding conventions`, `linting`, etc.

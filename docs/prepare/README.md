@@ -20,4 +20,4 @@ Es wird angenommen, dass die OSGeoLive bereits installiert ist. Falls nicht, kan
 > Sollte die Tastaturbelegung noch auf **US** gestellt sein (siehe unten rechts in der Taskleiste), öffnen Sie ein Terminal (`Strg+T`)
 > und führen Sie folgenen Befehl aus: `setxkbmap -layout de`
     
-![Die Startansicht der OSGeo Live 16 auf Ihrem Rechner.](../assets/startview_osgeo_v15.png)
+![Die Startansicht der OSGeo Live 17 auf Ihrem Rechner.](../assets/startview_osgeo_v17.png)

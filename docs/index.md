@@ -10,7 +10,7 @@ sidebar_position: 1
 
 Herzlich Willkommen beim **Hands on Masterportal: Erweiterte Konfiguration** Workshop. :wave:
 
-Dieser Workshop wurde für die Verwendung auf der [OSGeo-Live 16 DVD](https://live.osgeo.org) entwickelt und soll Ihnen einen umfassenden Überblick über das Open Source Masterportal als Web-GIS-Lösung geben.
+Dieser Workshop wurde für die Verwendung auf der [OSGeo-Live 17 DVD](https://live.osgeo.org) entwickelt und soll Ihnen einen umfassenden Überblick über das Open Source Masterportal als Web-GIS-Lösung geben.
 
 # Allgemeines
 
@@ -40,3 +40,4 @@ Neben den Partnern aus der öffentlichen Verwaltung gibt es verschiedene Unterne
 # Zuarbeit
 
 - LGV HH, u.a. Dirk Rohrmoser ([dirk.rohrmoser@gv.hamburg.de](mailto::dirk.rohrmoser@gv.hamburg.de))
+- Jan Suleiman suleiman@terrestris.de

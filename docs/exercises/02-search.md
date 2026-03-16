@@ -1,6 +1,6 @@
 # Konfiguration der Suche 🔍
 
-Es lassen sich verschiedene [SearchInterfaces](https://www.masterportal.org/mkdocs/doc/Latest/User/Portal-Config/config.json/#portalconfigmenusearchbarsearchinterfaces) anbinden, diese lassen sich beliebig konfigurieren!  
+Es lassen sich verschiedene [SearchInterfaces](https://www.masterportal.org/mkdocs/doc/v3.15.2/User/Portal-Config/config.json/#portalconfigmenusearchbarsearchinterfaces) anbinden, diese lassen sich beliebig konfigurieren!
 
 Sinnvoll ist häufig:
   - `visibleVector`
@@ -25,7 +25,7 @@ Stichwort für die Hilfe:
 
 <summary>Hinweis</summary>
 
-Result Events: https://www.masterportal.org/mkdocs/doc/Latest/User/Portal-Config/config.json/#portalconfigmenusearchbarsearchinterfacesresultevents
+Result Events: https://www.masterportal.org/mkdocs/doc/v3.15.2/User/Portal-Config/config.json/#portalconfigmenusearchbarsearchinterfacesresultevents
 
 </details>
 
@@ -51,23 +51,22 @@ Anschließend muss in der `config.json` im Block `searchbar` folgender Block def
     "serviceId": "1",
     "limit": 20,
     "lang": "de",
-    "lat": 52.3879,
-    "lon": 13.0582,
-    "bbox": "13.13, 52.27, 13.64, 52.70"
+    "lat": 51.9,
+    "lon": 7.6
     },
     "startZoomLevel": 9,
     "placeholder": "Suche nach: - Adressen"
 },
 ```
-**Aufgabe 4:** Es sollen nur Straßen durchsucht werden, fügen Sie einen entsprechenden Parameter hinzu.  
+<!-- **Aufgabe 4:** Es sollen nur Straßen durchsucht werden, fügen Sie einen entsprechenden Parameter hinzu.
 
-<detail>
+<details>
 
 <summary>Hinweis</summary>
 
-Schauen Sie in der `config.json.md` im Abschnitt `Portalconfig.searchBar.komoot` nach Filterung für OSM Tags. Weiter Infos: https://github.com/komoot/photon.
+Schauen Sie in der `config.json.md` im Abschnitt `Portalconfig.searchBar.komoot` nach Filterung für OSM Tags. Weitere Infos: https://github.com/komoot/photon.
 
-</detail>
+</details> -->
 
 
 ## Weitere SearchInterfaces / Such Tools
