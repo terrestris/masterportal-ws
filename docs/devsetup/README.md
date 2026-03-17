@@ -3,7 +3,20 @@ sidebar_position: 7
 title: Dev Setup
 ---
 
-## Repository und Entwicklungssetup 👨‍💻
+Es gibt zwei Möglichkeiten, das Masterportal lokal laufen zu lassen:
+
+- Konfigurationssetup: Fertiges Masterportal Kompilat. Praktisch, wenn lediglich Konfigurationen angepasst werden sollen.
+- Entwicklungssetup: Lokale Entwicklungsumgebung mit Zugriff auf den Quellcode. Notwendig, wenn bspw. Addons entwickelt werden sollen.
+
+## Konfigurationssetup 🛠️
+
+- Öffnen Sie einen Browser und laden Sie das Masterportal Kompilat herunter: https://bitbucket.org/geowerkstatt-hamburg/masterportal/downloads/examples-3.15.2-lts.zip
+- Entpacken Sie das heruntergeladene ZIP-Archiv nach `/home/user/masterportal` (Ordner muss ggfs. vorher angelegt werden).
+- Öffnen Sie ein Terminal und navigieren Sie in o.g. Ordner: `cd /home/user/masterportal`.
+- Starten Sie einen lokalen HTTP-Server, um die Portalseiten im Browser zu laden. Hierfür kann beispielsweise das Python Modul `http.server` genutzt werden: `python3 -m http.server 9001`.
+- Rufen Sie im Browser die Adresse `http://localhost:9001/examples-3.15.2-lts/Basic/` auf.
+
+## Entwicklungssetup 👨‍💻
 
 - Öffnen Sie das Terminal und führen Sie den Befehl `pwd` aus.
 - Sie sollten sich im Pfad `/home/user` befinden.
