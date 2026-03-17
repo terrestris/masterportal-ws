@@ -14,13 +14,13 @@ Wie in vielen modernen Javascript Projekte, wird auch für das Masterportal das 
 Eine ausführliche Beschreibung dieser Entwicklungstools- und Frameworks würde den Rahmen dieses Workshops sprengen, die benötigsten Infos werden im Rahmen dieses Workshops gegeben. Eine kurzen Überblick über npm ist [hier](../basics/npm.md) zu finden.
 
 - Führen Sie `node -v`, um die installierte Version von `node` auszugeben.
-Falls `node` nicht installiert ist, oder die Version < `22.19.0` oder >= `23` ist, folgende Schritte ausführen:
+Falls `node` nicht installiert ist, oder die Version nicht `22.19.0` entspricht, folgende Schritte ausführen:
     - `wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash`
     - Terminal Fenster schließen und erneut öffnen.
     - `nvm install v22.19.0`
     
     
-- Es soll auf der Version `3.15.2` gearbeitet werden, hierzu sind folgend Befehle auszuführen:
+- Es soll auf der Masterportal Version `3.15.2` gearbeitet werden, hierzu sind folgend Befehle auszuführen:
     - `git fetch origin`
     - `git checkout v3.15.2`
 
